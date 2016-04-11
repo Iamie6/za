@@ -1,0 +1,277 @@
+@charset "gb2312";
+/* svn...ui/project/comment3/css/comment.css */
+/* [${p_id},${t_id},${d_id}] published at ${publishdate} ${publishtime} */
+/*reset*/
+.my-sina-comment-wrap a:link,.my-sina-comment-wrap a:visited{color:#333;text-decoration: none;}
+.my-sina-comment-wrap a:hover,.my-sina-comment-wrap a:active{color:#c00;text-decoration: none;}
+.my-sina-comment-wrap{color:#333;background:#fff;font:14px/20px "Microsoft Yahei","\5FAE\8F6F\96C5\9ED1","SimSun","\5B8B\4F53","Arial Narrow",serif;}
+.my-sina-comment-wrap ul,
+.my-sina-comment-wrap ol,
+.my-sina-comment-wrap li,
+.my-sina-comment-wrap p,
+.my-sina-comment-wrap form,
+.my-sina-comment-wrap fieldset,
+.my-sina-comment-wrap table,
+.my-sina-comment-wrap td,
+.my-sina-comment-wrap th,
+.my-sina-comment-wrap img{margin:0;padding:0;border:0;font-weight: normal;}
+.my-sina-comment-wrap img{border:0;}
+.my-sina-comment-wrap select,.my-sina-comment-wrap input{vertical-align:middle;font-size:12px;}
+.my-sina-comment-wrap textarea {resize:vertical;font-size: 12px;}
+.my-sina-comment-wrap ul{list-style:none;}
+.my-sina-comment-layer .clearfix:after,.my-sina-comment-wrap .clearfix:after{content:'.';display:block;height:0;clear:both;visibility: hidden;}
+.my-sina-comment-layer .clearfix,.my-sina-comment-wrap .clearfix{*zoom:1;}
+.my-sina-comment-wrap .clearit{clear:both;font-size:0;line-height:0;height:0;}
+.my-sina-comment-wrap .gray{color:#888;}
+.my-sina-comment-wrap{margin: 0 auto;padding-bottom:5px;position: relative;zoom:1;}
+/*.my-sina-comment-user-lnk-wrap{color:#f84c4b;}*/
+/*背景*/
+.my-sina-comment-form .hd .tip,.my-sina-comment-share-sina,.my-sina-comment-share-qq,.my-sina-comment-form .ft .trigger,.my-sina-comment-form .ft .trigger-active,.my-sina-comment-list .title .reflash,.my-sina-comment-tip .succ i,.my-sina-comment-tip .error i,.my-sina-comment-layer .a-l-close,.my-sina-comment-form .ft .user .ico,.my-sina-comment-vote-tip,.my-sina-comment-chkbox i,.my-sina-comment-form .bd .arrow,.my-sina-comment-list-layer .close,.my-sina-comment-list .list .dialog-list-ft .fold em{background:url(http://i1.sinaimg.cn/dy/deco/2014/0926/bg.png) no-repeat 0 0;}
+/*按钮*/
+.my-sina-comment-wrap .btn {display: inline-block;*display: inline; zoom: 1;  vertical-align: baseline; margin: 0 2px;  cursor: pointer; text-align: center; text-decoration: none; font: 16px/100% "Microsoft Yahei","\5FAE\8F6F\96C5\9ED1","SimSun","\5B8B\4F53","Arial Narrow"; padding: .5em 1.5em .55em; -webkit-border-radius: .2em; -moz-border-radius: .2em; border-radius: .2em; word-wrap:break-word;word-break:break-all;}
+.my-sina-comment-wrap .btn:hover {text-decoration: none;}
+.my-sina-comment-wrap .btn:active {position: relative; top: 1px;}
+.my-sina-comment-wrap .btn-red {color: #faddde;background: #f84c4b; }
+.my-sina-comment-wrap .btn-red:hover {background: #f84c4b; }
+.my-sina-comment-wrap .btn-red:active {color: #de898c;}
+.my-sina-comment-wrap .btn-red:link,.my-sina-comment-wrap .btn-red:visited{color:#fff !important;}
+.my-sina-comment-wrap .btn-red:hover,.my-sina-comment-wrap .btn-red:active{color:#fff !important;}
+
+.my-sina-comment-wrap .btn-disabled,.my-sina-comment-wrap .btn-disabled:hover,.my-sina-comment-wrap .btn-disabled:active{color: #696969;background: #E1E1E1; cursor: default;}
+.my-sina-comment-wrap .btn-disabled:link,.my-sina-comment-wrap .btn-disabled:visited{color:#696969 !important;}
+.my-sina-comment-wrap .btn-disabled:hover,.my-sina-comment-wrap .btn-disabled:active{color:#696969 !important;}
+
+/*评论框*/
+.my-sina-comment-form{background: #FCFCFB;border:1px solid #D0CCC7;border-top-color:#D2CEC9;}
+.my-sina-comment-form{padding:0 20px 0 0;position: relative;zoom:1;}
+.my-sina-comment-form .hd{line-height: 30px;padding: 10px 0 15px;position: relative;zoom:1;}
+.my-sina-comment-form .hd .tip{float:left;direction: ltr; text-indent: -999em; width:125px;height:30px; background-position:  5px -1000px;margin-left: 20px;position:relative;zoom:1;}
+.my-sina-comment-form .hd .count{float: right;line-height: 28px;font-size: 14px;}
+.my-sina-comment-form .hd .count a:link,.my-sina-comment-form .hd .count a:visited{color:#c00;}
+.my-sina-comment-form .hd .count a:hover{color:#c00;text-decoration: underline;}
+.my-sina-comment-form .hd .count em{color:#c00;font-size:16px;font-family:arial;font-style: italic;vertical-align: -1px;padding: 0 5px;}
+.my-sina-comment-form .hd .count span{font-family: arial;padding: 0 10px;color:#A0A0A0;font-size: 16px;width:1px;overflow: hidden;/* display: inline-block;vertical-align: -8px; *vertical-align: 0; */}
+.my-sina-comment-form .bd{padding-right:0;position: relative;zoom:1;}
+.my-sina-comment-form .bd .user{width:126px;height:135px;text-align: center;position: absolute;left:0;top:0;}
+.my-sina-comment-form .bd .user .form-head a{display: inline-block; /*width:84px;*/border:1px solid #D0CCC7;border-radius: 43px;background: #fff;}
+.my-sina-comment-form .bd .user .form-head img{display: block; width:80px;height:80px; border-radius: 40px;margin: 2px;}
+.my-sina-comment-form .bd .user .name{display: block;}
+.my-sina-comment-form .user .name a:link,.my-sina-comment-form .user .name a:visited{color:#f84c4b;}
+.my-sina-comment-form .user .name a:hover,.my-sina-comment-form .user .name a:active{color:#c00;}
+.my-sina-comment-form .bd .arrow{position: absolute;left:117px;top:35px; width:10px;height:17px;overflow: hidden; background-position: 0 -60px;}
+
+
+
+.my-sina-comment-form .bd .editor{padding-left:126px;position: relative;zoom:1;}
+.my-sina-comment-form .bd .inner{border:1px solid #ccc;padding:0 5px;background: #fff;position: relative;border-radius: 3px;}
+.my-sina-comment-form .bd .box{display: block;width:100%;padding: 8px 0; height:104px; margin:0;border:0;overflow: auto;font-size: 14px;line-height: 26px; font-family: "Microsoft Yahei","\5FAE\8F6F\96C5\9ED1","SimSun","\5B8B\4F53","Arial Narrow",serif;resize:none;}
+.my-sina-comment-form .bd .box:focus{outline: none;}
+.my-sina-comment-form .bd .tip{position: absolute;left:50%;top:50%;}
+.my-sina-comment-form .ft{padding: 20px 0 18px 126px;}
+.my-sina-comment-form .ft .face{float:left;}
+.my-sina-comment-form .ft .trigger{float:left;position: relative;width:44px;height:26px;background-position:  0 -180px;direction: ltr; text-indent: -999em; overflow:hidden;}
+.my-sina-comment-form .ft .trigger-active{background-position:  0 -210px;}
+.my-sina-comment-form .ft .trigger:active{position: relative;top:-1px;}
+.my-sina-comment-form .ft .user{float: right;position: relative;}
+.my-sina-comment-form .ft .btn{float: right;width: 50px;padding-left:35px;padding-right: 35px;margin:-7px 0 0 25px;}
+.my-sina-comment-form .ft .weibo{cursor: pointer;float: left;}
+.my-sina-comment-chkbox i{float:left;display:inline;background-position:  0 -450px; width:15px; height:15px;overflow:hidden; line-height:300px;margin: 3px 5px 0 0;}
+.my-sina-comment-chkbox-selected i{ background-position: 0 -480px; }
+.my-sina-comment-form .ft .login{float: right;}
+.my-sina-comment-form .ft .user .name{margin-right: 8px;}
+.my-sina-comment-form .ft .user .logout{margin-left: 8px;}
+.my-sina-comment-form .ft .login .login-lnk{margin-right: 8px;}
+.my-sina-comment-form .ft .login .register-lnk{margin-left: 8px;}
+
+
+
+/*评论列表*/
+.my-sina-comment-list{*zoom:1;}
+.my-sina-comment-list .latest-tip{height:33px;line-height: 33px;background: #FFF7DC;border:1px solid #FFCD8C;border-width: 1px 0;margin-top: -2px;position: relative;text-align: center;}
+.my-sina-comment-list .latest-tip a:link,.my-sina-comment-list .latest-tip a:visited{color:#f84c4b;}
+.my-sina-comment-list .latest-tip a:hover,.my-sina-comment-list .latest-tip a:active{color:#c00;}
+.my-sina-comment-list .title{height:47px;border-top:1px solid #fff;background: #F4F3F1;overflow: hidden;}
+.my-sina-comment-list .title .name{width:100px; line-height:45px;float:left;font-size:16px;font-family:"Microsoft Yahei","\5FAE\8F6F\96C5\9ED1"; font-weight:bold; text-align:center;}
+.my-sina-comment-list .title .reflash{float:left;width: 65px;height: 26px;overflow: hidden;line-height: 90px;background-position:  0 -120px;margin-top:9px;}
+.my-sina-comment-list .title .reflash:hover,.my-sina-comment-list .title .reflash:active{background-position: 0 -150px;}
+.my-sina-comment-list .title .reflash:active{position: relative;top:-1px;}
+.my-sina-comment-list .list .item{position: relative;border-bottom:1px solid #DCDCDC;background-color: #fff;list-style: none;}
+.my-sina-comment-list .list .item .head{width:50px;height:50px;padding:20px 0 0 20px;}
+.my-sina-comment-list .list .item .head img{border-radius: 50%;}
+.my-sina-comment-list .list .name a:link,.my-sina-comment-list .list .name a:visited{color:#f84c4b;}
+.my-sina-comment-list .list .name a:hover,.my-sina-comment-list .list .name a:active{color:#c00;}
+.my-sina-comment-list .list .item .cont{margin:-60px 20px 0 85px;}
+.my-sina-comment-list .list .cont .txt{padding:0 0 5px;line-height:24px; font-size:14px;word-wrap:break-word;word-break:break-all;}
+.my-sina-comment-list .list .cont .txt a:link,.my-sina-comment-list .list .cont .txt a:visited{color:#f84c4b;}
+.my-sina-comment-list .list .cont .txt a:hover,.my-sina-comment-list .list .cont .txt a:active{color:#c00;}
+.my-sina-comment-list .list .cont .info{margin-bottom: 5px;}
+.my-sina-comment-list .list .cont .area{color:#999; padding-left:15px; }
+.my-sina-comment-list .list .cont .lnk{float: right;*margin-top: -20px;}
+.my-sina-comment-list .list .cont .lnk a:link,.my-sina-comment-list .list .cont .lnk a:visited{color:#f67400;}
+.my-sina-comment-list .list .cont .lnk a:hover,.my-sina-comment-list .list .cont .lnk a:active{color:#c00;}
+.my-sina-comment-list .list .cont .action{height: 26px;margin:15px 0 5px 0;font-size: 14px;text-align: left;position: relative;}
+/*.my-sina-comment-list .list .item .time{color:#999;}*/
+.my-sina-comment-list .list .item .report{display: inline-block; line-height: 14px; border-left:1px solid #E7E7E7;padding-left: 15px;margin-left: 15px;}
+.my-sina-comment-list .list .item .control{font-size: 12px;}
+.my-sina-comment-list .my-sina-comment-txt-face{vertical-align: middle;padding:0 3px;}
+.my-sina-comment-list .list .btns a{display: inline-block;padding: 0 20px;border-right:1px solid #E7E7E7;font-size: 14px;line-height: 14px;}
+.my-sina-comment-list .item .btns .show{background: none;}
+.my-sina-comment-list .item .btns .show:link,.my-sina-comment-list .item .btns .show:visited{color:#f84c4b;}
+.my-sina-comment-list .item .btns .show:hover,.my-sina-comment-list .item .btns .show:active{color:#c00;}
+.my-sina-comment-list .item .vote em{font-style: normal;font-family: arial;padding-left: 3px;}
+.my-sina-comment-list .item .btns .vote{border-left: 0;}
+.my-sina-comment-list .item .vote:link,.my-sina-comment-list .item .vote:visited{background-position:  20px -330px;}
+.my-sina-comment-list .item .vote:hover,.my-sina-comment-list .item .vote:active{background-position:  20px -360px;cursor: pointer;}
+.my-sina-comment-list .item .vote:hover span,.my-sina-comment-list .item .vote:active span{color:#c00;}
+.my-sina-comment-list .item .vote-active:link,.my-sina-comment-list .item .vote-active:visited{background-position:  20px -360px;color:#c00; cursor: text;}
+.my-sina-comment-list .item .vote-active:hover,.my-sina-comment-list .item .vote-active:active{background-position:  20px -360px; cursor: text;}
+.my-sina-comment-list .item .btns .reply{padding-right: 0;border-right: 0;}
+.my-sina-comment-list .item .btns .share{position: relative;z-index: 10;padding-right: 0;}
+.my-sina-comment-list .item .share:link,.my-sina-comment-list .item .share:visited{background-position:  20px 0;}
+.my-sina-comment-list .item .share-active:link,.my-sina-comment-list .item .share:hover{color:#c00;background-position:  20px -30px;}
+.my-sina-comment-list .item .share em{font-style: normal;}
+
+/*盖楼*/
+.my-sina-comment-list .list .floor-wrap{margin-top:12px;}
+.my-sina-comment-list .list .flat-floor-wrap{display: inline;}
+/*.my-sina-comment-list .list .floor a:link,.my-sina-comment-list .list .floor a:visited{color:#666;}
+.my-sina-comment-list .list .floor a:hover,.my-sina-comment-list .list .floor a:active{color:#c00;}*/
+.my-sina-comment-list .list .floor{position: relative;border:solid 1px #F3DDB3; background:#FFFEF4;color:#666;margin: 0 0 12px;*zoom:1;padding: 2px;}
+.my-sina-comment-list .list .floor-out{margin-top: -13px;}
+.my-sina-comment-list .list .floor .head{padding: 16px 0 0 16px;}
+.my-sina-comment-list .list .floor .cont .action{margin-top: 5px;}
+.my-sina-comment-list .list .reply-form-wrap{position: relative;clear: both;*zoom:1;}
+.my-sina-comment-list .list .reply-form-top{width:18px;height:10px; position:absolute; top:-9px; right:85px; margin-right: -10px; color:#efefef;*zoom:1;overflow: hidden;z-index: 1;}
+.my-sina-comment-list .list .reply-form-top em,.my-sina-comment-list .list .reply-form-top span{ display:block; font-size:17px; font-style:normal; font-family:"SimSun"; height:11px; overflow:hidden;}
+.my-sina-comment-list .list .reply-form-top em{ color:#D2CEC9}
+.my-sina-comment-list .list .reply-form-top span{ color:#FCFCFB; margin-top:-10px;}
+.my-sina-comment-list .list .reply-form{clear:both;border-width: 1px 0 0 0; padding:0 20px 0 0;margin-top: 10px;*zoom:1;}
+.my-sina-comment-list .list .reply-form-tip{padding-left: 92px;}
+.my-sina-comment-list .list .reply-form-tip em{color:#f84c4b;font-style: normal;}
+.my-sina-comment-list .list .reply-form .form-head img{border-radius: 25px;width:50px;height:50px;}
+/*.my-sina-comment-list .list .reply-form .form-head a*/
+.my-sina-comment-list .list .reply-form .hd{padding: 8px 0;height:0;overflow: hidden;}
+.my-sina-comment-list .list .reply-form .bd .user{width:90px;height:100px;}
+.my-sina-comment-list .list .reply-form .bd .editor{padding-left: 90px;}
+.my-sina-comment-list .list .reply-form .bd .box{height:40px;}
+.my-sina-comment-list .list .reply-form .bd .arrow{left:81px;top:20px;}
+.my-sina-comment-list .list .reply-form .ft{padding: 15px 0 10px 90px;}
+.my-sina-comment-list .list .reply-form .ft .action{margin:0;}
+.my-sina-comment-list .list .action .btns{position: absolute;right:0;top:0;}
+.my-sina-comment-list .loading{display: none;height:40px;border-radius: 5px; margin:25px 5px 5px;background:url(http://i3.sinaimg.cn/ent/deco/2012/0912/images/indicator_24.gif) center center no-repeat #F1F1F1;}
+.my-sina-comment-list .more{margin-top:25px;font-size:15px;height:40px;color:#666; line-height:40px; text-align:center;font-family:"Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1";background: #eee;}
+.my-sina-comment-list .more a:link,.my-sina-comment-list .more a:visited{color:#f84c4b;}
+.my-sina-comment-list .more a:hover,.my-sina-comment-list .more a:active{color:#f84c4b;}
+.my-sina-comment-list .more em{font-style: normal;}
+.my-sina-comment-list .loading a:hover,.my-sina-comment-list .loading a:active{color: #666;text-decoration: none;}
+.my-sina-comment-list-loading .more{display: none;}
+.my-sina-comment-list-loading .loading{display: block;}
+
+
+/*表情层*/
+.my-sina-comment-layer{border-spacing: 0;border-collapse:collapse;}
+.my-sina-comment-layer tr,.my-sina-comment-layer td{padding: 0;}
+.my-sina-comment-layer .a-l-top-c,.my-sina-comment-layer .a-l-btm-c,.my-sina-comment-layer .a-l-m-l,.my-sina-comment-layer .a-l-m-r,.my-sina-comment-layer .a-l-top-r,.my-sina-comment-layer .a-l-top-l,.my-sina-comment-layer .a-l-btm-l,.my-sina-comment-layer .a-l-btm-r { height:4px; background:url(http://timg.sjs.sinajs.cn/t36/style/images/common/layer/wraplayer_09.png); }
+.my-sina-comment-layer .a-l-top-r,.my-sina-comment-layer .a-l-top-l,.my-sina-comment-layer .a-l-btm-l,.my-sina-comment-layer .a-l-btm-r { width:4px;}
+.my-sina-comment-layer .a-l-m-c { background:#fff; }
+.my-sina-comment-layer .a-l-top-l { -webkit-border-top-left-radius:4px; -moz-border-radius-topleft:4px;border-top-left-radius:4px }
+.my-sina-comment-layer .a-l-top-r { -webkit-border-top-right-radius:4px; -moz-border-radius-topright:4px;border-top-right-radius:4px }
+.my-sina-comment-layer .a-l-btm-l { -webkit-border-bottom-left-radius:4px; -moz-border-radius-bottomleft:4px;border-bottom-left-radius:4px }
+.my-sina-comment-layer .a-l-btm-r { -webkit-border-bottom-right-radius:4px; -moz-border-radius-bottomright:4px;border-bottom-right-radius:4px; }
+.my-sina-comment-layer .a-l-box { border:1px solid #C6C6C6; }
+.my-sina-comment-layer .a-l-close-wrap {float: right;display: inline;width: 16px;height: 16px;margin:-17px -17px 0 0;}
+.my-sina-comment-layer .a-l-close{ display: block; background-position:  0 -580px; cursor:pointer; height:16px; width:16px; }
+.my-sina-comment-layer .a-l-close:hover{background-position: -30px -580px;}
+.my-sina-comment-layer .a-l-btn a { margin:0 5px; }
+.my-sina-comment-layer .a-l-arrow { width:16px; height:8px; overflow:hidden; position:absolute; left:134px; top:-8px; background:url(http://timg.sjs.sinajs.cn/t36/style/images/common/new_index_bg.png?id=1317114904156) no-repeat -142px -71px; _background:url(http://timg.sjs.sinajs.cn/t36/style/images/common/layer/wraplayer.gif?id=1317114904156) no-repeat 0 -12px; }
+.my-sina-comment-face-list { padding:20px 20px 10px; position:relative; }
+.my-sina-comment-face-list .a-l-arrow { left:18px; }
+.my-sina-comment-face-list .face-list-items { width:330px; }
+.my-sina-comment-face-list .face-list-items ul{padding: 0;margin: 0;}
+.my-sina-comment-face-list .face-list-items li { float:left; height:28px; width:28px; padding:0 5px 5px 0; overflow: hidden;}
+.my-sina-comment-face-list .face-list-items li a:link,.my-sina-comment-face-list .face-list-items li a:visited { width:26px; height:26px; text-align:center; display:block; border:1px solid #E8E8E8; }
+.my-sina-comment-face-list .face-list-items li a:hover { border:1px solid #0095cd;background: #fff9ec; }
+.my-sina-comment-face-list .face-list-items li img{border:0;border:none;}
+
+/*评论提示*/
+.my-sina-comment-tip{position: absolute;left:50%;background: #fff;z-index: 1000;}
+.my-sina-comment-tip .inner{overflow:hidden;line-height: 30px;font-family: "\5FAE\8F6F\96C5\9ED1","\9ED1\4F53";font-size: 16px;color: #888;}
+.my-sina-comment-tip i{width: 40px;height: 32px;overflow: hidden;position: absolute;left:0;top:0;}
+.my-sina-comment-tip .txt{margin-left: 40px;font-size: 16px;}
+.my-sina-comment-tip .succ i{background-position:  0 -240px;}
+.my-sina-comment-tip .error i{background-position:  0 -280px;}
+
+/*顶提示*/
+.my-sina-comment-vote-tip{display: none;width: 48px;height: 28px;direction: ltr; text-indent: -9999em;text-align:left;background-position:  0 -820px;position: absolute;top:0;z-index: 1000;}
+/*查看对话*/
+
+.my-sina-comment-list .list .dialog-list-wrap{border-bottom:1px solid #DCDCDC;position: relative;_zoom:1;}
+.my-sina-comment-list .list .dialog-list-wrap .reply-form{margin:0 10px 10px 0;border-width: 1px;}
+.my-sina-comment-list .list .dialog-list-title{padding: 25px 0 0 25px;line-height: 26px;font-size: 16px;color:#333;}
+.my-sina-comment-list .list .dialog-list-title span{float: left;}
+.my-sina-comment-list .list .dialog-list-bd{margin:20px 0 10px -16px;}
+.my-sina-comment-list .list .dialog-list-bd a{display: block; height:26px;line-height: 26px;background: #F2F2F0;border-radius: 13px;}
+.my-sina-comment-list .list .dialog-list-bd a:link,.my-sina-comment-list .list .dialog-list-bd a:visited{color:#666;}
+.my-sina-comment-list .list .dialog-list-bd a:hover,.my-sina-comment-list .list .dialog-list-bd a:active{color:#333;}
+.my-sina-comment-list .list .dialog-list-bd a i{position: relative; float: left;display: inline;width:24px;height:24px;border:4px solid #E1E1DE;border-radius: 50%;background-color: #F84C4B;margin:-2px 22px 0 0;}
+.my-sina-comment-list .list .dialog-list-bd a em{position: absolute;top:11px;left:8px; display: block; width: 0; height: 0; border-style: solid; overflow: hidden;border-width: 4px 4.5px 0 4.5px;border-color: #fff transparent transparent transparent;_border-color:tomato; _filter:chroma(color=tomato);_border-top-color:#fff;}
+
+.my-sina-comment-list .list .dialog-list{border-left: 2px solid #E0E0DE; margin-left:55px;position:relative;zoom:1;}
+.my-sina-comment-list .list .dialog-list .item{margin-left: 50px;padding-top: 20px;border-bottom-style: dotted;position:relative;zoom:1;}
+.my-sina-comment-list .list .item-first .dialog-list-hack-top{position: absolute;left:-52px;top:0;z-index: 1;height:23px;width:2px;background: #fff;}
+.my-sina-comment-list .list .item-last .dialog-list-hack-btm{position: absolute;left:-52px;top:0;z-index: 1;height:100%;width:2px;background: #fff;_display:none;}
+.my-sina-comment-list .list .dialog-list .item-last{border-bottom: 0;}
+.my-sina-comment-list .list .dialog-list .item-hide{display: none;}
+.my-sina-comment-list .list  .dialog-list-show .item-hide{display: block;}
+.my-sina-comment-list .list  .dialog-list-show .dialog-list-bd{margin-bottom: 10px;}
+.my-sina-comment-list .list  .dialog-list-show .dialog-list-bd a em{top:9px;border-width: 0 4.5px 4px 4.5px; border-color: transparent transparent #fff transparent; _border-color:tomato; _border-bottom-color:#fff;}
+/*.my-sina-comment-list .list .dialog-list .last{border-bottom: 0;}*/
+.my-sina-comment-list .list .dialog-list .item .head{padding:0;margin-top:20px;position: absolute;left:-63px;top:0;width:25px;height:25px;z-index: 10;background: #F7FAFC;border-radius: 16px;overflow: hidden;}
+.my-sina-comment-list .list .dialog-list .item .head img{width:25px;height:25px;border-radius:50%;}
+/*最后一个*/
+.my-sina-comment-list .list .dialog-list .item-last .head{margin:0;padding-top:20px;background: url(http://www.sinaimg.cn/dy/deco/2014/1121/cmnt_prt_line.png) 11px top repeat-y;}
+
+.my-sina-comment-list .list .dialog-list .item-me .head{padding-left: 0;margin-top:-10px;padding-top:30px;position: absolute;left:-80px;top:0;width:58px;height:58px;z-index: 10;background: url(http://www.sinaimg.cn/dy/deco/2014/1117/cmnt_prt_prev.png) center top no-repeat; }
+/*我最后一个*/
+.my-sina-comment-list .list .dialog-list .item-me.item-last .head{background-position: center top;background-image: url(http://www.sinaimg.cn/dy/deco/2014/1117/cmnt_prt_prev.png);_background-image:none;}
+/*我最前一个*/
+.my-sina-comment-list .list .dialog-list .item-me.item-first .head{height:88px;_height:25px;background-position: center bottom; background-image: url(http://www.sinaimg.cn/dy/deco/2014/1117/cmnt_prt_next.png);}
+/*我中间*/
+.my-sina-comment-list .list .dialog-list .item-me.item-middle .head{height:100px;padding-top:22px;background-position: center top; background-image: url(http://www.sinaimg.cn/dy/deco/2014/1124/cmnt_prt_middle.png);}
+/*只有一个我*/
+.my-sina-comment-list .list .dialog-list .item-me.item-one .head{background: none;}
+.my-sina-comment-list .list .dialog-list .item-me .head{_background-image:none !important; _margin-top:0 !important;_height:58px !important;}
+
+.my-sina-comment-list .list .dialog-list .item-me .head img{width:50px;height:50px;border:4px solid #E1E1DE;}
+
+.my-sina-comment-list .list .dialog-list .item .cont{margin:0 20px 0 0;}
+/*.my-sina-comment-list .list .dialog-list .item .time{position: absolute;left:-100px;top:50px;background: #fff;color: #333;font-size: 14px;display: block;width:100px;text-align: center;}*/
+
+/*---------------------------------- 以下为JS控制样式，勿删 ----------------------------------*/
+
+/*JS 回复 模拟回复成功 隐藏回复内容的对应的“支持”，“回复”和“分享”按钮*/
+.my-sina-comment-list .item-hack .action .btns,.my-sina-comment-list .item-hack .report{display: none;}
+.my-sina-comment-list .item-hack .floor .action .btns{display: inline;}
+.my-sina-comment-list .floor-hack{border-top:1px dashed #F3DDB3;margin-top:10px;padding-top:5px;}
+.my-sina-comment-list .floor-hack .lnk,.my-sina-comment-list .list .floor-hack .action .btns{display: none;}
+
+/*JS 登录相关,sina登录和weibo登录，在body上添加mysInacMNT_前缀的类，控制显示隐藏对应内容*/
+.my-sina-comment-form .login{display: none;}
+.mysInacMNT_logout .my-sina-comment-form .login{display: block;_display:inline;}
+.my-sina-comment-form .user{display: none;}
+.mysInacMNT_login .my-sina-comment-form .user,.mysInacMNT_weibo_login .my-sina-comment-form .user{display: block;_display:inline;}
+/*未登录时显示默认头像*/
+.my-sina-comment-form .bd .user-default{display: none;}
+.mysInacMNT_logout .my-sina-comment-form .user-default{display: block;}
+
+/* .my-sina-comment-form .face{display: none;}
+.mysInacMNT_login .my-sina-comment-form .face,.mysInacMNT_weibo_login .my-sina-comment-form .face{display: block;_display:inline;} */
+
+/*JS 实名验证，不通过实名验证的用户，不显示“分享功能”*/
+.my-sina-comment-form .ft .weibo,.my-sina-comment-list .item .share{display:none;}
+.mysInacMNT_weibo_login_security .my-sina-comment-list .item .share{display:inline-block;}
+.mysInacMNT_weibo_login_security .my-sina-comment-form .ft .weibo{display: block;_display:inline;}
+
+/*不支持圆角*/
+/*.mysInacMNT-no-border-radius .my-sina-comment-list .list .item .num{width:31px;height:25px;top:19px;line-height: 25px;}*/
+

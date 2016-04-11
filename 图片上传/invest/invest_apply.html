@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>投资人申请</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/invest.css" />
+</head>
+
+<style>
+
+
+</style>
+
+
+<body>
+
+<!--header-->
+<div class="header-top">
+    <ul class="contain clearfix">
+        <li class="fl">客服热线：400-998-9988（8:30 - 21:30）</li>
+        <li class="fr">
+            <!--未登陆显示-->
+            <div class="no-login"  style="display:none">
+                您好，
+                <a href="javascript:;" title="请登录">请登录</a>
+                <a href="javascript:;" title="免费注册" class="register">免费注册</a> |
+                <a href="javascript:;" title="常见问题" class="question">常见问题</a>
+            </div>
+            <!--已登陆显示-->
+            <div class="login" style="display:block;">
+                您好，
+                <a href="javascript:;" title="用户名">13588886666</a>
+                <a href="javascript:;" title="退出" class="register">退出</a> |
+                <a href="javascript:;" title="常见问题" class="question">常见问题</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="headerbox">
+    <div class="header-nav contain clearfix">
+        <div class="logo fl">
+            <img src="../images/logo.png" alt="关于我们" title="卡贝基金"/>
+        </div>
+        <div class="navlist fl">
+            <a href="../index.html" title="首页" class="active">首页</a>
+            <a href="../project.html" title="项目专区">项目专区</a>
+            <a href="../investor.html" title="投资人">投资人</a>
+            <a href="#" title="机构专区">机构专区</a>
+            <a href="about.html" title="关于我们">关于我们</a>
+        </div>
+        <div class="myaccount fr">
+            <!--未登陆显示-->
+            <div class="myac myacnlogin" style="display:none;">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户" >我的帐户</a>
+                <span class="pulldown"></span>
+            </div>
+
+            <!--已登陆显示-->
+            <div class="myac loginmyac loginmyacv" style="display:block;">
+                <span class="portrait"></span>
+                <a href="javascript:;" class="myaca" title="我的帐户">我的帐户</a>
+                <span class="pulldown"></span>
+                <div class="myac-details">
+                    <p><a href="javascript:;" title="我的主页">我的主页</a></p>
+                    <p><a href="javascript:;" title="个人中心">个人中心</a></p>
+                    <p class="nob"><a  href="javascript:;" title="消息">消息(21)</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header end-->
+<!--导航悬浮-->
+<div class="suspend" style="display:none;">
+    <div class="suspend-nav contain clearfix">
+        <div class="logo1 fl">
+            <img src="../images/logo1.png" alt="卡贝基金" title="卡贝基金"/>
+        </div>
+        <div class="navlist suspend-navlist fl">
+            <a href="javascript:;" title="首页" class="active">首页</a>
+            <a href="javascript:;" title="项目专区">项目专区</a>
+            <a href="javascript:;" title="投资人">投资人</a>
+            <a href="javascript:;" title="机构专区">机构专区</a>
+            <a href="javascript:;" title="关于我们">关于我们</a>
+        </div>
+        <div class="myaccount fr">
+            <!--未登陆显示-->
+            <div class="myac myacnlogin suspendl" style="display:none;">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户">我的帐户</a>
+                <span class="pulldown"></span>
+            </div>
+
+            <!--已登陆显示-->
+            <div class="myac loginmyac loginmyacv suspendl" style="display:block">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户" class="myaca">我的帐户</a>
+                <span class="pulldown"></span>
+                <div class="myac-details">
+                    <p><a href="#" title="我的主页">我的主页</a></p>
+                    <p><a href="javascript:;" title="个人中心">个人中心</a></p>
+                    <p class="nob"><a  href="javascript:;" title="消息">消息(21)</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导航悬浮 end-->
+
+<div class="shenqing-height"></div>
+
+
+
+
+<div class="shenqing-main">
+
+<div class="shenqing-left">
+
+       <div class="shenqing-top"><span>申请成为投资人</span></div>
+
+
+        <div class="shenqing-center">
+
+        <div class="shenqing-height"></div>
+
+
+        <div class="zhenshi-xingming">
+            <div class="input-qianmian">真实姓名<span>*</span></div><div class="input-biaozhun"><input type="text"/></div>
+        </div>
+        <div class="yanzheng"></div>
+
+        <div class="zhenshi-xingming">
+            <div class="input-qianmian">手机号码<span>*</span></div><div class="input-biaozhun"><input id="yijuhua" type="text"   /></div>
+        </div>
+        <div class="yanzheng"></div>
+
+       <div class="shangchuan">
+
+           <div class="input-qianmian">名片<span>*</span></div>
+           <div class="input-shangchuan">
+               <input type="button"  onclick="path.click()" class="mingpian-shangchuan">
+               <input type="file" id="path" style="display:none">
+           </div>
+
+       </div>
+
+
+        <div class="yanzheng clear-both">请上传名片，如没有名片请上传您的身份证件</div>
+
+
+
+        <div class="zhenshi-xingming">
+
+            <div class="input-qianmian">个人/单位<span>*</span></div>
+
+            <div class="input-radio">
+                <div class="input-radio-div"><input id="geren-input" name="geren" type="radio" checked="checked" /></div>
+                <div class="radio-wenzi">个人</div>
+
+            </div>
+
+            <div class="input-radio">
+                <div class="input-radio-div"><input id="jigou-input" name="geren" type="radio"/></div>
+                <div class="radio-wenzi">机构</div>
+            </div>
+
+        </div>
+
+       <div id="geren-kuang">
+
+        <div class="sanjiao"> </div>
+
+        <div class="tishi-kuang">
+
+            <div class="kuang-biaoti">个人投资人符合以下条件之一的自然投资人</div>
+
+
+            <div class="kuang-type">身份：</div>
+            <div class="kuang-xuanze">
+            <div class="xuanze-radio"><input name="geren-radio" type="radio"/></div><div>知名投资人，名企高管、合伙人或有过投资案例10万起的自然人。</div>
+            </div>
+
+            <div class="kuang-type">个人收入：</div>
+            <div class="kuang-xuanze">
+                <div class="xuanze-radio"><input name="geren-radio" type="radio"/></div><div>最近两年个人年均收入不低于100万元人民币或家庭（个人及其配偶），
+                年均收入不低于200万元人民币。
+            </div>
+            </div>
+
+            <div class="kuang-type">证券资产类：</div>
+            <div class="kuang-xuanze">
+                <div class="xuanze-radio"><input name="geren-radio" type="radio"/></div><div>个人名下货币及其前一交易日日终证券类资产市值不低于
+                100万元人民币。</div>
+            </div>
+
+            <div class="kuang-type">固定资产：</div>
+            <div class="kuang-xuanze">
+                <div class="xuanze-radio"><input name="geren-radio" type="radio"/></div><div>个人名下固定资产（除主要居所）市值1000万元人民币以上。
+                我不符合上述任一条件</div>
+            </div>
+
+
+        </div>
+
+       </div>
+
+       <div id="danwei-kuang">
+
+                <div class="sanjiao1"> </div>
+
+                <div class="tishi-kuang">
+
+                    <div class="kuang-biaoti">个人投资人符合以下条件之一的自然投资人</div>
+
+
+                    <div class="kuang-type">身份：</div>
+                    <div class="kuang-xuanze">
+                        <div class="xuanze-radio"><input name="geren-radio" type="radio"/></div><div>知名投资人，名企高管、合伙人或有过投资案例10万起的自然人。</div>
+                    </div>
+
+                    <div class="kuang-type">个人收入：</div>
+                    <div class="kuang-xuanze">
+                        <div class="xuanze-radio"><input name="geren-radio" type="radio"/></div><div>最近两年个人年均收入不低于100万元人民币或家庭（个人及其配偶），
+                        年均收入不低于200万元人民币。
+                    </div>
+                    </div>
+
+                    <div class="kuang-type">证券资产类：</div>
+                    <div class="kuang-xuanze">
+                        <div class="xuanze-radio"><input name="geren-radio" type="radio"/></div><div>个人名下货币及其前一交易日日终证券类资产市值不低于
+                        100万元人民币。</div>
+                    </div>
+
+                    <div class="kuang-type">固定资产：</div>
+                    <div class="kuang-xuanze">
+                        <div class="xuanze-radio"><input name="geren-radio" type="radio"/></div><div>个人名下固定资产（除主要居所）市值1000万元人民币以上。
+                        我不符合上述任一条件</div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+        <div class="zhenshi-xingming biaodan-height">
+            <div class="input-qianmian">所在城市<span>*</span></div>
+            <div class="input-biaozhun">
+                <div id="sjld" style="width:314px;float:left;position:relative;">
+                    <div class="m_zlxg" id="shenfen">
+                        <p title="">省份</p>
+                        <div class="m_zlxg2">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="m_zlxg" id="chengshi">
+                        <p title="">城市</p>
+                        <div class="m_zlxg2">
+                            <ul></ul>
+                        </div>
+                    </div>
+
+                    <input id="sfdq_num" type="hidden" value="" />
+                    <input id="csdq_num" type="hidden" value="" />
+                    <input id="sfdq_tj" type="hidden" value="" />
+                    <input id="csdq_tj" type="hidden" value="" />
+                    <input id="qydq_tj" type="hidden" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="yanzheng" id="xuanze-chengshi"></div>
+
+
+
+
+        <div class="gongsi">
+            <div class="input-qianmian">所在公司<span>&nbsp;</span></div><div class="input-biaozhun"><input id="gongsi" type="text"/></div>
+        </div>
+
+        <div class="zhenshi-xingming biaodan-height">
+            <div class="input-qianmian">职位头衔<span>&nbsp;</span></div><div class="input-biaozhun"><input type="text"/></div>
+        </div>
+
+        <div class="miaoshu-div biaodan-height">
+            <div class="input-qianmian">自我描述<span>*</span></div>
+            <div class="input-miaoshu">
+                <textarea class="ziwo-miaoshu">
+
+                </textarea>
+            </div>
+        </div>
+
+        <div class="clear-both"></div>
+
+         <div class="yiyuedu">
+             <div class="un-select" ></div>
+             <div class="check-left"></div>
+             <div  class="yuedu-wenzi">我已阅读并同意签署 《用户服务协议》 《投资人规则》 《风险提示书》</div>
+         </div>
+
+
+            <div class="tijiao">提交</div>
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+<div class="shenqing-right">
+
+    <div class="xiaotieshi">小贴士：</div>
+
+    <div class="tieshi-wenti">1、内容信息会有哪些基本要求呢？</div>
+    <div class="tieshi-daan">答：个人信息的填写请与您的名片或身份证保持一致，且必须为真实信息，以便于投资后平台能及时与您取得联系。</div>
+
+    <div class="tieshi-wenti">2、上传了名片后还需要填写公司名称和职位/头衔吗？</div>
+    <div class="tieshi-daan">答：名片上传和公司名称、职位/头衔不可缺少任何一项，且必须保持信息一致，完整的身份证明及自我描述有助于提高审核通过几率及您的信用倍率。</div>
+
+    <div class="tieshi-wenti">3、我是自由职业者，没有名片怎么办呢？</div>
+    <div class="tieshi-daan">答：可上传您的身份证件，并在自我描述处详细填写您的投资经历及目前金融财产情况。</div>
+
+
+</div>
+
+
+</div>
+
+
+<!--footer-->
+<div class="footer">
+    <div class="contain footer-main clearfix">
+        <div class="footer-l fl">
+            <p class="footer-lt">
+                <a href="javascript:;" target="_blank" title="关于卡贝金融">关于卡贝金融</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="风险提示">风险提示</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="成功案例">成功案例</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="媒体报道">媒体报道</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="合作伙伴">合作伙伴</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="联系我们">联系我们</a>
+            </p>
+            <p>Copyright © 2004-2015 卡贝基金 版权所有 | 投资有风险，购买需谨慎</p>
+        </div>
+        <div class="footer-r fl">
+            <p>联系我们（9:00-22:00）</p>
+            <p class="tel">
+                400-666-6666<span>（个人咨询）</span><br/>
+                400-888-8888<span>（企业咨询）</span>
+            </p>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+<!--返回顶部-->
+<div class="back-top">
+    <a href="#top">^</a>
+</div>
+<!--返回顶部 end-->
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/address.js"></script>
+<script>
+
+
+    $(".input-biaozhun input").live('blur',function()
+    {
+
+        if($(this).val()=="")
+        {
+            $(this).parent().parent().next(".yanzheng").text("不能为空！");
+        }
+        else
+        {
+            $(this).parent().parent().next(".yanzheng").text("");
+        }
+
+    });
+
+
+    var param=0;
+    $(".un-select").click(function()
+    {
+
+        if(param==0)
+        {
+        $(".un-select").hide();
+        $(".check-left").show();
+        param=1;
+        }
+
+    });
+
+
+    $(".check-left").click(function()
+    {
+       if(param==1)
+       {
+        $(".un-select").show();
+        $(".check-left").hide();
+           param=0;
+       }
+
+    });
+
+
+    $("#geren-input").click(function() {
+
+        if($("#geren-input:checked").val()=="on")
+        {
+            $("#geren-kuang").slideDown();
+            $("#danwei-kuang").hide();
+        }
+        else
+        {
+            $("#geren-kuang").hide();
+            $("#danwei-kuang").slideDown();
+
+        }
+
+
+    });
+
+    $("#jigou-input").click(function() {
+
+        if($("#jigou-input:checked").val()=="on")
+        {
+
+            $("#geren-kuang").hide();
+            $("#danwei-kuang").slideDown();
+
+        }
+        else
+        {
+
+            $("#geren-kuang").slideDown();
+            $("#danwei-kuang").hide();
+
+        }
+
+    });
+
+
+    $(".tijiao").click(function()
+    {
+
+        if($("#shenfen p").text()=="省份/地区")
+        {
+          $("#xuanze-chengshi").text("请选择城市！");
+            return;
+        }
+
+    });
+
+    $(".m_zlxg2 ul li").live('click',function ()
+    {
+
+        if($("#shenfen p").text()=="省份/地区")
+        {
+            $("#xuanze-chengshi").text("请选择城市！");
+        }
+        else
+        {
+            $("#xuanze-chengshi").text("");
+        }
+    });
+
+
+
+
+
+
+    $(function(){
+
+        $("#sjld").sjld("#shenfen","#chengshi");
+
+    });
+
+
+    window.onload = function (){
+
+        $("#shenfen p").text("省份/地区");
+        $("#chengshi p").text("城市");
+
+    }
+
+
+    $("#yijuhua").blur(function(){
+
+        if($("#yijuhua").val()!="")
+        {
+            var reg = new RegExp("^1[3|5|7|8|][0-9]{9}$");
+            if(!reg.test($(this).val()))
+            {
+                $(this).parent().parent().next(".yanzheng").text("格式有误！");
+            }
+            else
+            {
+                $(this).parent().parent().next(".yanzheng").text("");
+            }
+        }
+    });
+
+
+</script>
+
+</body>
+</html>

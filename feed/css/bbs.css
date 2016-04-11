@@ -1,0 +1,113 @@
+@charset "gb2312";
+/* svn...ui/project/comment3/css/bbs.css */
+/* [${p_id},${t_id},${d_id}] published at ${publishdate} ${publishtime} */
+
+/*20150113160416*/
+
+/* 初始化CSS */
+html, body, ul, li, ol, dl, dd, dt, p,form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; }
+input::-moz-focus-inner {border:none;padding:0;}
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+input[type="text"], input[type="password"], textarea { outline-style:none;}
+textarea { resize:none; }
+table { border-collapse:collapse; }
+body { background:#fff; color:#333; padding:0; font:14px/24px "Microsoft Yahei","微软雅黑","SimSun","宋体","Arial Narrow",serif; }
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+a { color:#333; text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active, a:focus { color:#c00; text-decoration:none; }
+h1, h2, h3, h4, h5, em { margin:0; padding:0;font-weight:normal; }
+.wrap { width:1000px; margin:0 auto;position: relative;}
+.top-list .bd .num,.top-cmnt-tip-cont i,.top-cmnt-tip-close,.use-tip .close{background:url(http://i1.sinaimg.cn/dy/deco/2014/1031/bbs_bg.png) no-repeat;}
+.top-cmnt-tip{width:235px;padding: 15px 15px 0 15px;height: 29px;line-height: 14px;border: 1px solid #C7C7C7;border-top: 0;position: absolute;right:0;top:0;}
+.top-cmnt-tip-close{width:13px;height:13px;float: right;background-position: 0 -50px;}
+.top-cmnt-tip-close:hover,.top-cmnt-tip-close:active{filter:alpha(opacity=70);opacity:0.7;}
+.top-cmnt-tip-cont i{width:14px;height:14px;margin:1px 10px 0 0; float: left;background-position: 0 -70px;}
+.main h1{font-size: 28px;line-height: 40px;padding: 20px 0;}
+.main h1 a:link,.main h1 a:visited{color:#656565;}
+.main h1 a:hover,.main h1 a:active{color:#656565;}
+.main .content{float:left; width:680px; _overflow:hidden;}
+.main .side{float:right; width:300px;border-top:2px solid #000;position: relative;}
+
+
+.use-tip{background: #EDF3FA;display: block; width:300px;height:202px;cursor: pointer;margin-bottom: 30px;}
+.use-tip:hover{background: #E5EFFA;}
+.use-tip .hd{height:72px;}
+.use-tip .close{display: block;width:15px;height:15px;background-position: -20px -50px;position: absolute;top:10px;right:10px;}
+.use-tip:hover .close{background-position: -40px -50px;}
+.use-tip .bd{line-height: 28px;font-size: 16px;color:#333;padding: 0 12px;}
+.use-tip .bd span{color:#c00;}
+
+.top-list-wrap{position: relative;}
+.use-tip-show .top-list-2 .hd{height:7px;}
+.use-tip-2{background: #F3F3F3;display: block; width:300px;height:83px;cursor: pointer;margin-bottom: 30px;position: absolute;top:-2px;z-index: 1;}
+.use-tip-2:hover{background: #F0F0F0;}
+.use-tip-2 .use-tip-hd{height:20px;}
+.use-tip-2 .use-tip-close{display: block;width:15px;height:15px;position: absolute;top:10px;right:10px;background:url(http://www.sinaimg.cn/dy/deco/2014/1126/bbs_bg.png) no-repeat;background-position: -20px -50px;}
+.use-tip-2:hover .use-tip-close{background-position: -40px -50px;}
+.use-tip-2 .use-tip-bd{line-height: 22px;font-size: 16px;color:#333;padding: 0 12px;}
+.use-tip-2 .use-tip-bd span{color:#c00;}
+
+.user-wrap{padding: 18px;text-align: center;border-top: 1px solid #D0CCC7;}
+.user-wrap .head a{display: inline-block; /*width:84px;*/border:1px solid #D0CCC7;border-radius: 43px;background: #fff;}
+.user-wrap .head img{display: block; width:80px;height:80px; border-radius: 40px;margin: 2px;}
+.user-wrap .name{display: block;line-height: 35px;font-size: 16px;}
+.user-wrap .name a:link,.user-wrap .name a:visited{color:#ff8500;}
+.user-wrap .name a:hover,.user-wrap .name a:active{color:#c00;}
+.user-bd{margin-top: 15px;}
+.user-bd .count{width:114px;height:50px;overflow: hidden;}
+.user-bd .count span{display: block;text-align: right;}
+.user-bd .count em{font-style: normal;font-family: Arial;font-size: 26px;color:#ff8500;}
+.user-wrap .comment{text-align: right;float: left;}
+.user-wrap .line{height:40px;float: left;width:1px;background: #CCC;margin:3px 17px;}
+.user-wrap .reply{text-align: left;float: right;}
+.user-wrap .reply span{text-align: left;}
+.user-bd a:hover,.user-bd a:active{color:#c00;opacity: 0.8;}
+.top-list{padding:0 10px 0 20px;width:270px;background: #fff;border-top:1px solid #D0CCC7;}
+.top-list-fixed{position: fixed;_position:absolute;top:0;border-top-color:#fff;}
+.top-list .hd{ height:30px; padding: 15px 0; overflow:hidden; zoom:1;}
+.top-list .hd h2{float:left; font-size: 18px;line-height: 30px;color:#2e2e2e;}
+.top-list .bd li{height:73px;}
+.top-list .bd .num{ width:63px;height:43px;margin-right:10px; line-height:43px; float:left; color:#fff; font-family:Arial; font-size:16px; padding-right:13px; text-align:right;}
+.top-list .bd .txt{ overflow:hidden; *zoom:1;font-size: 14px;line-height: 30px;color:#454545;position: relative;top:-9px;}
+.top-list .bd .txt a:link,.top-list .bd .txt a:visited{color:#454545;}
+.top-list .bd .txt a:hover,.top-list .bd .txt a:active{color:#c00;}
+.top-list .bd .num a{display: block;}
+.top-list .bd .num a:link,.top-list .bd .num a:visited{color:#fff;}
+.top-list .bd .num a:hover,.top-list .bd .num a:active{color:#fff;filter:alpha(opacity=80);opacity:0.8;}
+.top-list-wrap-fix{background-color:#FAFAFA;}
+/* 广告 */
+.adBlock{background: #EDEFF2;padding:10px 10px 20px;text-align: center;border-bottom:1px solid #D0CCC7;}
+/* footer */
+.footer {clear:both; border-top:solid 1px #ccc; padding:15px 0; text-align:center; line-height:30px; color:#999; margin:15px 0 0 }
+.footer a:link, .footer a:visited { color:#999; }
+.footer a:hover { color:#f00 }
+/*返回顶部按钮*/
+.top_btn {position:fixed;_position:absolute;left:50%; bottom:100px; margin-left:476px; width:25px; overflow:hidden; height:25px; }
+.top_btn .toplink { background:url(http://i3.sinaimg.cn/ent/deco/2012/0907/content/ent_zxh_0816_02v9.png) no-repeat -100px -300px; width:25px; height:25px;overflow:hidden; display:block; text-indent:-999em;direction: ltr; cursor:pointer;}
+.top_btn .toplink:focus{ outline:none; }
+.top_btn .toplink:hover {background-position:-150px -300px}
+/*微博转发按钮*/
+.weibo_btn {position:fixed; _position:absolute;left:50%; bottom:100px; margin:0 0 0 -501px; text-align:center; color:#4c4c4c; width:26px; }
+
+.weibo_btn .wt_link, .weibo_btn .wt_link:visited {background:#fff url(http://i0.sinaimg.cn/dy/2011/0905/U6893P1DT20110905170320.gif) no-repeat 4px 5px; width:21px;outline:none; overflow:hidden; display:block; cursor:pointer; color:#4c4c4c; border:solid 1px #ccc;padding:29px 2px 7px; line-height:14px;}
+.weibo_btn .wt_link:hover { background-color:#eee;color:#4c4c4c; text-decoration:none;}
+.weibo_btn .wt_link, .weibo_btn .wt_link:visited{text-decoration:none}
+
+
+
+/*评论*/
+.sina-comment-form-top .ft,.sina-comment-form-top .bd .editor,.sina-comment-form-bottom .ft,.sina-comment-form-bottom .bd .editor{padding-left: 20px !important;}
+.sina-comment-form-top .bd .arrow,.sina-comment-form-top .user,.sina-comment-form-bottom .bd .arrow,.sina-comment-form-bottom .user{display: none !important;}
+.sina-comment-form-bottom{border-top: 0;}
+.user-wrap{display: none;}
+.sinacMNT_login .user-wrap,.sinacMNT_pre_login .user-wrap,.sinacMNT_weibo_login .user-wrap{display: block;}
+/*登录*/
+.TAP14 .msg-dropdown{z-index: 1;}

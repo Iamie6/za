@@ -1,0 +1,641 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <title>卡贝基金</title>
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/personcenter.css" />
+	<link rel="stylesheet" href="__TMPL__Public/home/css/dropdownlist.css" />
+	<link rel="stylesheet" href="css/jquery.Jcrop.css">
+   <style>
+   </style>
+</head>
+<body>
+<!--header-->
+<div class="header-top">
+    <ul class="contain clearfix">
+        <li class="fl">客服热线：400-998-9988（8:30 - 21:30）</li>
+        <li class="fr">
+            <!--未登陆显示-->
+            <div class="no-login"  style="display:none">
+                您好，
+                <a href="javascript:;" title="请登录">请登录</a>
+                <a href="javascript:;" title="免费注册" class="register">免费注册</a> |
+                <a href="javascript:;" title="常见问题" class="question">常见问题</a>
+            </div>
+            <!--已登陆显示-->
+            <div class="login" style="display:block;">
+                您好，
+                <a href="javascript:;" title="用户名">13588886666</a>
+                <a href="javascript:;" title="退出" class="register">退出</a> |
+                <a href="javascript:;" title="常见问题" class="question">常见问题</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="headerbox">
+	<div class="header-nav contain clearfix">
+		<div class="logo fl">
+			<img src="images/logo.png" alt="关于我们" title="卡贝基金"/>
+		</div>
+		<div class="navlist fl">
+			<a href="index.html" title="首页" class="active">首页</a>
+			<a href="#" title="股权众筹">股权众筹</a>
+			<a href="#" title="海外专区">海外专区</a>
+			<a href="#" title="高校专区">高校专区</a>
+			<a href="investor.html" title="投资人">投资人</a>
+			<a href="#" title="机构专区">机构专区</a>
+			<!--<a href="about/about.html" title="关于我们">关于我们</a>-->
+            <a href="#" title="发布项目" class="issue"><span>+</span>发布项目</a>
+		</div>
+		<div class="myaccount fr">
+			<!--未登陆显示-->
+			<div class="myac myacnlogin" style="display:none;">
+				<span class="portrait"></span>
+				<a href="javascript:;" title="我的帐户" >我的帐户</a>
+				<span class="pulldown"></span>
+			</div>
+
+			<!--已登陆显示-->
+			<div class="myac loginmyac loginmyacv" style="display:block;">
+				<span class="portrait"></span>
+				<a href="javascript:;" class="myaca" title="我的帐户">我的帐户</a>
+				<span class="pulldown"></span>
+				<div class="myac-details">
+					<p><a href="javascript:;" title="我的主页">我的主页</a></p>
+					<p><a href="javascript:;" title="个人中心">个人中心</a></p>
+					<p class="nob"><a  href="javascript:;" title="消息">消息(21)</a></p>
+				</div>
+			</div>
+		</div>
+        <!--<div class="fproject"><a href="发布项目">发布项目</a></div>-->
+	</div>
+</div>
+
+<!--header end-->
+<!--导航悬浮-->
+<div class="suspend" style="display:none;">
+    <div class="suspend-nav contain clearfix">
+        <div class="logo1 fl">
+            <img src="images/logo1.png" alt="卡贝基金" title="卡贝基金"/>
+        </div>
+        <div class="navlist suspend-navlist fl">
+            <a href="javascript:;" title="首页" class="active">首页</a>
+			<a href="#" title="股权众筹">股权众筹</a>
+			<a href="#" title="海外专区">海外专区</a>
+			<a href="#" title="高校专区">高校专区</a>
+            <a href="javascript:;" title="投资人">投资人</a>
+            <a href="javascript:;" title="机构专区">机构专区</a>
+            <a href="javascript:;" title="关于我们">关于我们</a>
+			<a href="#" title="发布项目" class="issue"><span>+</span>发布项目</a>
+        </div>
+        <div class="myaccount fr">
+            <!--未登陆显示-->
+            <div class="myac myacnlogin suspendl" style="display:none;">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户">我的帐户</a>
+                <span class="pulldown"></span>
+            </div>
+
+            <!--已登陆显示-->
+            <div class="myac loginmyac loginmyacv suspendl" style="display:block">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户" class="myaca">我的帐户</a>
+                <span class="pulldown"></span>
+                <div class="myac-details">
+                    <p><a href="#" title="我的主页">我的主页</a></p>
+                    <p><a href="javascript:;" title="个人中心">个人中心</a></p>
+                    <p class="nob"><a  href="javascript:;" title="消息">消息(21)</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导航悬浮 end-->
+<!--banner-->
+<div class="banner" style="dispaly:none">
+	<div class="inner contain clearfix">
+		<div class="inner-l fl clearfix">
+			<div class="headportrait fl">
+				<a href="javascript:void(0);;"><img src="images/person.jpg" title="徐佳莹" alt="徐佳莹"/></a>
+			</div>
+			<div class="message fl">
+				<p class="name"><a href="javascript:void(0)" title="徐佳莹">徐佳莹</a></p>
+				<p class="site">
+					<span class="icon icon1"></span>
+					浙江  杭州
+				</p>
+				<p class="updatepwd">
+					<a href="javascript:void(0);" title="修改密码">
+						<span class="icon"></span>
+						修改密码
+					</a>	
+				</p>
+			</div>
+		</div>
+		<div class="inner-r fr">
+			<p>
+				<span class="icon icon2"></span>
+				人气：
+				<span class="moods">159</span>
+			</p>
+			<p class="fans">
+				<span class="icon icon3"></span>
+				粉丝：0
+				<span class="icon icon4"></span>
+				关注：7
+			</p>
+		</div>
+	</div>
+</div>
+<!--banner end-->
+<!--tab-->
+<div class="tab-box" style="dispaly:none">
+	<div class="tab-navbg">
+		<div class="tab-nav contain">
+			<ul class="clearfix">
+				<li>项目</li>
+				<li>关注</li>
+				<li>消息<span>(2)</span></li>
+				<li class="active">个人资料</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contentbox contain clearfix">
+		<div class="tab-contentbox fl">
+			<!--项目-->
+			<div class="tab-content project ">
+				<h2>我投资的项目</h2>
+				<div class="project-title">
+					<span class="img">项目</span>
+					<span class="title">项目名称</span>
+					<span class="common">筹资目标</span>
+					<span class="common">认购金额</span>
+					<span class="common">状态</span>
+					<span class="common">领投人</span>
+					<span class="common">操作</span>
+				</div>
+				<div class="project-content">
+					<ul>
+						<!--已付款-->
+						<li class="clearfix">
+							<div class="img">
+								<a href="javascript:void(0);"><img src="images/recommend-tu.jpg" title="车语传媒AutoRadio" alt="车语传媒AutoRadio"/></a>
+							</div>
+							<div class="title">
+								<p class="title-top"><a href="javascript:void(0)"  title="车语传媒AutoRadio">车语传媒AutoRadio</a></p>
+								<p class="title-bottom">首款月营收有望过100万的社交型手机网络游戏！</p>
+							</div>
+							<div class="common">2000万</div>
+							<div class="common">200万</div>
+							<div class="common  paid">已付款</div>
+							<div class="common">张三</div>
+							<div class="common">
+								<a href="javascript:void(0)" title="删除" class="del">删除</a>
+							</div>
+						</li>
+						<!--未付款-->
+						<li class="clearfix">
+							<div class="img">
+								<a href="javascript:void(0);"><img src="images/recommend-tu.jpg" title="车语传媒AutoRadio" alt="车语传媒AutoRadio"/></a>
+							</div>
+							<div class="title">
+								<p class="title-top"><a href="javascript:void(0)"  title="车语传媒AutoRadio">车语传媒AutoRadio</a></p>
+								<p class="title-bottom">首款月营收有望过100万的社交型手机网络游戏！</p>
+							</div>
+							<div class="common">2000万</div>
+							<div class="common">200万</div>
+							<div class="common  no-paid">未付款</div>
+							<div class="common">张三</div>
+							<div class="common nop">
+								<a href="javascript:void(0)" title="取消投资" class="cancel">取消投资</a>
+								<a href="javascript:void(0)" title="继续付款" class="continue">继续付款</a>
+							</div>
+						</li>
+						
+					</ul>
+					 <!--分页开始 -->
+					<div class="page-center">
+
+						<div class="page-up">上一页</div>
+						<div class="page-num">1</div>
+						<div class="page-num-select">2</div>
+						<div class="page-num">3</div>
+						<div class="page-num">4</div>
+						<div class="page-num">5</div>
+						<div class="page-num">6</div>
+						<div class="page-down">上一页</div>
+
+					</div>
+					<!--分页结束 -->
+				</div>
+				
+			</div>
+			<!--项目结束-->
+			<!--关注-->
+			<div class="tab-content project attention">
+				<h2>我关注的项目</h2>
+				<div class="project-title">
+					<span class="img">项目</span>
+					<span class="title">项目名称</span>
+					<span class="common">筹资目标</span>
+					<span class="common">状态</span>
+					<span class="common">发起人</span>
+					<span class="common">领投人</span>
+					<span class="common">操作</span>
+				</div>
+				<div class="project-content">
+					<ul>
+						<!--发行中-->
+						<li class="clearfix">
+							<div class="img">
+								<a href="javascript:void(0);"><img src="images/recommend-tu.jpg" title="车语传媒AutoRadio" alt="车语传媒AutoRadio"/></a>
+							</div>
+							<div class="title">
+								<p class="title-top"><a href="javascript:void(0)" title="车语传媒AutoRadio">车语传媒AutoRadio</a></p>
+								<p class="title-bottom">首款月营收有望过100万的社交型手机网络游戏！</p>
+							</div>
+							<div class="common">2000万</div>
+							<div class="common  paid">发行中</div>
+							<div class="common">王五</div>
+							<div class="common">张三</div>
+							<div class="common">
+								<a href="javascript:void(0)" title="取消关注" class="off unfollow">取消关注</a>
+							</div>
+						</li>
+						<!--已结束-->
+						<li class="clearfix">
+							<div class="img">
+								<a href="javascript:void(0);"><img src="images/recommend-tu.jpg" title="车语传媒AutoRadio" alt="车语传媒AutoRadio"/></a>
+							</div>
+							<div class="title">
+								<p class="title-top"><a href="javascript:void(0)" title="车语传媒AutoRadio">车语传媒AutoRadio</a></p>
+								<p class="title-bottom">首款月营收有望过100万的社交型手机网络游戏！</p>
+							</div>
+							<div class="common">2000万</div>
+							<div class="common  no-paid">未付款</div>
+							<div class="common">王五</div>
+							<div class="common">张三</div>
+							<div class="common">
+								<a href="javascript:void(0)" title="取消关注" class="off unfollow">取消关注</a>
+							</div>
+						</li>
+						
+						
+					</ul>
+					 <!--分页开始 -->
+					<div class="page-center">
+
+						<div class="page-up">上一页</div>
+						<div class="page-num">1</div>
+						<div class="page-num-select">2</div>
+						<div class="page-num">3</div>
+						<div class="page-num">4</div>
+						<div class="page-num">5</div>
+						<div class="page-num">6</div>
+						<div class="page-down">上一页</div>
+
+					</div>
+					<!--分页结束 -->
+				</div>
+				
+			</div>
+			<!--关注结束-->
+			<!--消息-->
+			
+			<div class="tab-content news">
+				<div class="news-nav">
+					<ul class="clearfix">
+						<li class="active">@我</li>
+						<li>系统消息</li>
+					</ul>
+				</div>
+				<div class="news-conbox">
+					<div class="news-con foucs ac">
+						<ul>
+							<li class="clearfix">
+								<div class="portrait fl">
+									<a href="javascript:void(0)"><img src="images/person.jpg" title="贾亮亮" alt="贾亮亮"/></a>
+								</div>
+								<div class="message">
+									<p><a href="javascript:void(0)" title="栗亮亮" class="name">栗亮亮</a>     <span class="time">2015-05-02</span></p>
+									<p>消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容</p>
+									<p class="abtn">
+										<a href="javascript:void(0)" title="删除"  class="del fr">删除</a>
+										<a href="javascript:void(0)" title="回复"  class="reply fr">回复</a>
+									</p>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="portrait fl">
+									<a href="javascript:void(0)"><img src="images/person.jpg" title="贾亮亮" alt="贾亮亮"/></a>
+								</div>
+								<div class="message">
+									<p><a href="javascript:void(0)" title="栗亮亮" class="name">栗亮亮</a>     <span class="time">2015-05-02</span></p>
+									<p>消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容</p>
+									<p class="abtn">
+										<a href="javascript:void(0)" title="删除"  class="del fr">删除</a>
+										<a href="javascript:void(0)" title="回复"  class="reply fr">回复</a>
+									</p>
+								</div>
+							</li>
+							
+						</ul>
+						 <!--分页开始 -->
+						<div class="page-center">
+
+							<div class="page-up">上一页</div>
+							<div class="page-num">1</div>
+							<div class="page-num-select">2</div>
+							<div class="page-num">3</div>
+							<div class="page-num">4</div>
+							<div class="page-num">5</div>
+							<div class="page-num">6</div>
+							<div class="page-down">上一页</div>
+
+						</div>
+						<!--分页结束 -->
+					</div>
+					<div class="news-con foucs">
+						<ul>
+							<li class="clearfix">
+								<div class="portrait fl">
+									<img src="images/person.jpg" title="贾亮亮" alt="贾亮亮"/>
+								</div>
+								<div class="message">
+									<p><span class="name">栗亮亮</span>     <span class="time">2015-05-02</span></p>
+									<p>消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容</p>
+									
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="portrait fl">
+									<img src="images/person.jpg" title="贾亮亮" alt="贾亮亮"/>
+								</div>
+								<div class="message">
+									<p><span class="name">栗亮亮</span>     <span class="time">2015-05-02</span></p>
+									<p>消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容</p>
+									
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="portrait fl">
+									<img src="images/person.jpg" title="贾亮亮" alt="贾亮亮"/>
+								</div>
+								<div class="message">
+									<p><span class="name">栗亮亮</span>     <span class="time">2015-05-02</span></p>
+									<p>消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容</p>
+									
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="portrait fl">
+									<img src="images/person.jpg" title="贾亮亮" alt="贾亮亮"/>
+								</div>
+								<div class="message">
+									<p><span class="name">栗亮亮</span>     <span class="time">2015-05-02</span></p>
+									<p>消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容</p>
+									
+								</div>
+							</li>
+						</ul>
+						 <!--分页开始 -->
+						<div class="page-center">
+
+							<div class="page-up">上一页</div>
+							<div class="page-num">1</div>
+							<div class="page-num-select">2</div>
+							<div class="page-num">3</div>
+							<div class="page-num">4</div>
+							<div class="page-num">5</div>
+							<div class="page-num">6</div>
+							<div class="page-down">上一页</div>
+
+						</div>
+						<!--分页结束 -->
+					</div>
+				</div>
+			</div>
+			<!--消息结束-->
+			<!--个人资料-->
+			<div class="tab-content person-message  first">
+				<h3>个人资料</h3>
+				<div class="person-main">
+					<form action="" method="">
+						<p>基本信息</p>
+						<ul>
+							<li>
+								<span>姓名</span>
+								<input type="text" name="username" id="username"/>
+								<span class="hint">姓名不可为空</span>
+							</li>
+							<li>
+								<span>公司</span>
+								<input type="text" name="company" id="company"/>
+								<span class="hint">公司不可为空</span>
+							</li>
+							<li>
+								<span>职位</span>
+								<input type="text" name="position" id="position"/>
+								<span class="hint">职位不可为空</span>
+							</li>
+							<li>
+								<span>国内/境外</span><span class="rcolor">*</span>
+								<select>
+									<option value="所在地区">所在地区</option>
+									<option value="国内">国内</option>
+									<option value="境外">境外</option>
+								</select>
+								<span class="hint">职位不可为空</span>
+							</li>
+						</ul>
+						<p>联系信息</p>
+						<ul>
+							<li>
+								<span>手机</span>
+								<input type="text" name="mobile" id="mobile"/>
+								<span class="hint">手机不可为空</span>
+							</li>
+							<li>
+								<span>邮箱</span>
+								<input type="text" name="email" id="myemail"/>
+								<span class="hint">邮箱不可为空</span>
+							</li>
+							<li>
+								<span>微信</span>
+								<input type="text" name="wechat" id="wechat"/>
+								<span class="hint">微信不可为空</span>
+							</li>
+						</ul>
+						<p>自我介绍</p>
+						<textarea name="Memo"  id="textmemo" wrap=PHYSICAL onKeyDown="gbcount(this.form.Memo,this.form.total,this.form.used,this.form.remain);" onKeyUp="gbcount(this.form.Memo,this.form.total,this.form.used,this.form.remain);">dsfdsafds</textarea>
+						<input type="hidden" maxLength="4" name="total" size="3" value="300" class="inputtext"> 
+						<input type="hidden" maxLength="4" name="used" size="3" value="0" class="inputtext"> 
+						<p class="inputword">
+							还可以输入 
+							<input id="wordsize" maxLength="4" disabled="true" name="remain" size="3" value="300" class="inputtext">
+							字
+						</p>
+						<input type="button" value="保存" class="inputbtn"/>
+					</form>
+				</div>
+			</div>
+			<!--个人资料 结束-->
+		</div>
+		<div class="personm fr">
+			<div class="portrait">
+				<div>
+					<a href="javascript:void(0)"><img src="images/person.jpg" title="徐佳莹" alt="徐佳莹"/></a>
+				</div>
+				<div class="update">
+					<a href="javascript:void(0);" title="修改头像" class="updateportrait">修改头像</a>
+				</div>
+			</div>
+			<div  class="mymessage">
+				<p class="name">徐佳莹</p>
+				<!--如果是邮箱登陆，需验证手机-->
+				<p  class="tel"  >手机：未验证 <a href="javascript:void(0)" class="checktel" >立即验证</a></p>
+				<p   >邮箱：email@126.com</p>
+				<!--如果是手机登陆，需验证邮箱-->
+				<p  style="display:none" class="tel">手机：13581806666</p>
+				<p  style="display:none" >邮箱：未验证 <a href="javascript:void(0)" class="checkeml" >立即验证</a></p>
+				<p class="time">最近登录：2015-06-02 14:24</p>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+<!--tab end-->
+<!--修改头像弹出-->
+<div class="update-face">
+	<div class="update-top">
+		<span class="update-nface">设置新头像</span>
+		<span class="update-close"></span>
+	</div>
+	<div class="update-main clearfix">
+		<div class="update-mleft fl">
+			
+			<div class="update-choose">
+				<p class="update-word">请选择您的照片</p>
+				<input type='button' value='上传图像' class='mybutton' id="update-btn"/>
+				<input type='file' id='path' name="path_headpic" class="upload-file" style='display:none'/>
+			</div>
+			<div class="update-tailor">
+				<div class="update-tmain">
+					<img id="element_id" src="images/person.jpg"/>
+				</div>
+				<div class="update-tbtn">
+					<a href="javascript:void(0)" id="update-confirm">确定</a>
+					<a href="javascript:void(0)" class="update-off" id="update-off">取消</a>
+				</div>
+			</div>
+		</div>
+		<!--缩略图-->
+		<div class="update-mright fl" id="preview-pane">
+			<p>预览</p>
+			<div class="update-thumbnail1 preview-container" >
+				<img src="images/person.jpg" class="jcrop-preview"/>
+			</div>
+			<p class="update-pd1">110*110</p>
+			<div class="update-thumbnail2 preview-container2">
+				<img src="images/person.jpg" class="jcrop-preview2"/>
+			</div>
+			<p class="update-pd2">48*48</p>
+		</div>
+		<!--后台头像预览-->
+		<div class="update-mright fl" id="preview-pane1">
+			<p>预览</p>
+			<div class="update-thumbnail1" >
+				<img src="images/person.jpg"/>
+			</div>
+			<p class="update-pd1">110*110</p>
+			<div class="update-thumbnail2">
+				<img src="images/person.jpg"/>
+			</div>
+			<p class="update-pd2">48*48</p>
+		</div>
+		
+	</div>
+	 <form id="coords" class="coords" onsubmit="return false;" style="display:none;">
+          <label>X1 <input type="text" size="4" id="x1" name="x1" /></label>
+          <label>Y1 <input type="text" size="4" id="y1" name="y1" /></label>
+          <label>X2 <input type="text" size="4" id="x2" name="x2" /></label>
+          <label>Y2 <input type="text" size="4" id="y2" name="y2" /></label>
+          <label>W <input type="text" size="4" id="w" name="w" /></label>
+          <label>H <input type="text" size="4" id="h" name="h" /></label>
+	</form>
+</div>
+
+
+<!--修改头像弹出 end-->
+<!--footer-->
+<div class="footer">
+    <div class="contain footer-main clearfix">
+        <div class="footer-l fl">
+            <p class="footer-lt">
+                <a href="javascript:;" target="_blank" title="关于卡贝金融">关于卡贝金融</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="风险提示">风险提示</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="成功案例">成功案例</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="媒体报道">媒体报道</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="合作伙伴">合作伙伴</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="联系我们">联系我们</a>
+            </p>
+            <p>Copyright ? 2004-2015 卡贝基金 版权所有 | 投资有风险，购买需谨慎</p>
+        </div>
+        <div class="footer-r fl">
+            <p>联系我们（9:00-22:00）</p>
+            <p class="tel">
+                400-666-6666<span>（个人咨询）</span><br/>
+                400-888-8888<span>（企业咨询）</span>
+            </p>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+<!--返回顶部-->
+<div class="back-top">
+    <a href="#top">^</a>
+</div>
+<!--返回顶部 end-->
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/jquery.Jcrop.min.js"></script> 
+<script src="js/tools/layer/layer.js"></script>
+<script src="js/public.js"></script>
+<script src="js/itemdetails.js"></script>
+<script type="text/template" id="tpl-reply-form">
+    <div class="reply-form">
+        <form method="" action="">
+            <textarea placeholder="请输入内容" class="mycontent"></textarea>
+
+            <span class="empty">不能为空</span>
+            <div class="code clearfix">
+                <div class="fl">
+                    输入验证码:
+                    <input type="text"/>
+                </div>
+                <div class="fl">
+                    <img src="images/yzm.png"/>
+                </div>
+                <div class="fr">
+                    <input type="submit" class="tj" value="提交"/>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</script>
+
+
+</body>
+</html>

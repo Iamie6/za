@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color:#f3f5f8;}
+.alink{color:#51b6f2;}
+.position_relative{position:relative;}
+.position_absolute{position:absolute;}
+.asterisk,.tips{color:#ff0000;}
+.top_10_{top:-10px;}
+.cursor_p{cursor:pointer;}
+.margin_top_9{margin-top:9px;}
+.margin_top_20{margin-top:20px;}
+.margin_top_11_{margin-top:-11px;}
+.margin_top_42{margin-top:42px;}
+.margin_left_6{margin-left:6px;}
+.margin_left_12{margin-left:12px;}
+.margin_left_21{margin-left:21px;}
+.margin_left_24{margin-left:24px;}
+.margin_left_40{margin-left:40px;}
+.margin_left_70{margin-left:70px;}
+.margin_left_90{margin-left:90px;*margin-left:6px;}
+.margin_right_10{margin-right:10px;}
+.float_left{float:left;}
+.float_right{float:right;}
+.content{width:1000px;margin:0 auto;}
+.content_top{width:1000px;padding:41px 0px;background-color:#fff;margin:30px auto;box-shadow:0px 3px 5px #dddee1;-moz-box-shadow:0px 3px 5px #dddee1;-webkit-box-shadow:0px 3px 5px #dddee1;}
+.content_bottom{width:1000px;min-height:100px;height:auto;overflow:hidden;padding-bottom:68px;margin:0 auto 30px auto;background-color:#fff;box-shadow:0px 3px 5px #dddee1;-moz-box-shadow:0px 3px 5px #dddee1;-webkit-box-shadow:0px 3px 5px #dddee1;}
+.module_id{height:60px;width:100%;line-height:60px;font-size:2em;color:#484848;text-indent:1em;border-bottom:#e4e8ef 1px solid;}
+.content_top_step{width:968px;height:42px;margin:auto;background-image:url(../images/financestep.png);background-repeat:no-repeat;}
+.pro_name_row{width:100%;height:auto;overflow:hidden;}
+.pro_name_row_left{width:272px;text-align:right;font-size:1.1em;line-height:36px;}
+.pro_name_row_center{width:340px;height:auto;}
+.pro_name_row_right{width:360px;height:auto;}
+#pro_name,#pro_intro,#team_num,#pro_phase,#pro_classify,#custom_tag{padding-left:8px;outline:none;width:338px;*width:330px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+.city_province,.city_city{padding-left:8px;outline:none;width:140px;*width:138px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+#city_city{margin-left:10px;}
+.city_span{width:338px;height:34px;}
+.pro_name_tips{height:36px;line-height:34px;display:block;width:auto;}
+.help_icon{width:14px;height:14px;background-image:url(../images/financestep.png);background-repeat:no-repeat;background-position:0px -359px;}
+.dialog{width:229px;height:56px;display:block;background-image:url(../images/financestep.png);background-repeat:no-repeat;background-position:-24px -338px;}
+.dialog_content{width:196px;height:auto;display:block;line-height:1.6em;padding-top:6px;color:#fff;}
+.choose_file{cursor:pointer;float:left;width:80px;height:70px;display:block;border:#d0d3d9 1px solid;border-radius:5px;background-image:url(../images/financestep.png);background-repeat:no-repeat;background-position:-255px -332px;}
+.choose_file_tips{width:auto;height:36px;line-height:36px;float:left;margin-left:16px;color:#c4c4c4;}
+.choose_file_span{width:340px;height:auto;display:block;overflow:hidden;}
+.choose_file_span_{width:80px;height:70px;display:block;overflow:hidden;}
+.next_btn{width:230px;height:50px;display:block;line-height:50px;background-color:#51b6f2;border-radius:5px;text-align:center;font-size:1.3em;color:#fff;cursor:pointer;}
+.next_btn:hover{background-color:#49ade9;}
+#step2 #pro_video_intro{padding-left:8px;outline:none;width:338px;*width:330px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+#step2 #user_need,#step2 #solution,#step2 #pro_advantage,#step2 #require_scene,#step2 #market_analyze,#step2 #development_planning,#step2 #other{padding-left:8px;outline:none;width:338px;*width:330px;height:86px;line-height:20px;border:#d0d3d9 1px solid;border-radius:5px;}
+#step2 .choose_file_tips{width:240px;height:70px;line-height:36px;float:left;margin-left:16px;color:#c4c4c4;}
+#step2 .choose_file_tips span{width:100%;height:30px;line-height:30px;display:block;}
+.display_none{display:none;}
+
+#step3 #pro_video_intro{padding-left:8px;outline:none;width:338px;*width:330px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+#step3 #income_source,#step3 #user_need,#step3 #solution,#step3 #pro_advantage,#step3 #require_scene,#step3 #development_planning,#step3 #other{padding-left:8px;outline:none;width:338px;*width:330px;height:86px;line-height:20px;border:#d0d3d9 1px solid;border-radius:5px;}
+#step3 .choose_file_tips{width:240px;height:70px;line-height:36px;float:left;margin-left:16px;color:#c4c4c4;}
+#step3 .choose_file_tips span{width:100%;height:30px;line-height:30px;display:block;}
+#step3 .pro_name_row_center_{border:#e8e8e8 1px solid;border-radius:3px;width:579px;}
+#step3 .pro_name_row_center_1{border:0;}
+#step3 ul{list-style:none;width:545px;height:auto;margin:auto auto;}
+#step3 ul li{width:545px;height:35px;margin-top:20px;}
+#step3 ul li span{width:227px;height:33px;display:block;border:#d0d3d9 1px solid;border-radius:5px;float:left;}
+.cost_input{width:94%;margin-left:3%;height:100%;*height:30px;line-height:33px;line-height:31px;border:0;outline:none;border-radius:5px;}
+.money_input{float:left;width:70%;margin-left:8px;padding:0px;height:100%;*height:31px;line-height:33px;line-height:31px;border:0;outline:none;border-radius:5px;}
+.unit_label{width:24%;height:100%;line-height:32px;display:block;float:left;color:#999999;text-align:right;}
+.add_row_link{color:#51b6f2;height:33px;line-height:32px;}
+.del_span{width:62px;*width:55px;height:33px;line-height:32px;float:left;text-align:center;color:#ff0000;cursor:pointer;}
+
+.pro_name_row_center_01{width:227px;height:46px;line-height:46px;display:block;text-align:right;float:left;}
+.pro_name_row_center_02{width:153px;height:46px;line-height:46px;display:block;text-align:right;float:left;}
+.pro_name_row_center_03{width:154px;height:46px;line-height:46px;display:block;text-align:right;float:left;}
+.items{width:100%;height:35px;display:block;}
+.items_title{width:100%;height:46px;display:block;}
+.items_title *{color:#999999;}
+.items_cell{width:88px;height:35px;line-height:35px;display:block;text-align:center;float:left;color:#999999;}
+.items_cell_01{width:137px;height:33px;line-height:33px;display:block;border:#d0d3d9 1px solid;float:left;border-radius:5px;}
+.items_cell_01 input{width:80px;margin-left:10px;margin-top:0;height:28px;line-height:28px;border:0;outline:none;float:left;}
+.items_cell_01 > span{width:auto;height:28px;line-height:28px;display:block;float:left;color:#999999;}
+.padding_bottom{padding-bottom:20px;}
+
+
+#step4 .real_name_input,#step4 .position{outline:none;width:338px;*width:330px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+#step4 #user_need,#step4 #solution,#step4 #pro_advantage,#step4 #require_scene,#step4 .person_intro,#step4 #development_planning,#step4 #other{padding-left:8px;outline:none;width:338px;*width:330px;height:86px;line-height:20px;border:#d0d3d9 1px solid;border-radius:5px;}
+#step4 .choose_file_tips{width:240px;height:70px;line-height:36px;float:left;margin-left:16px;color:#c4c4c4;}
+#step4 .choose_file_tips span{width:100%;height:30px;line-height:30px;display:block;}
+
+.real_name_span{height:34px;line-height:34px;width:auto;display:block;color:#ff0000;}
+#step4 .education,#step4 .work{width:579px;height:auto;}
+#step4 .pro_name_row_center{width:338px;height:auto;}
+.border_css{border:#d0d3d9 1px solid;}
+
+.education_span{width:100%;height:36px;display:block;}
+.education_span_cell_left{width:109px;height:36px;line-height:36px;display:block;text-align:right;}
+.education_span_cell_center,.attend_time,.degree{width:361px;height:36px;}
+.border_radius_5{border-radius:5px;}
+.education_span_cell_center input{width:100%;height:100%;*height:32px;*width:358px;line-height:34px;border:0px;outline:none;}
+.attend_time select{width:84px;height:36px;}
+.degree select{width:121px;height:36px;}
+
+.text_align_right{text-align:right;}
+.responsibilities_cell_left{width:109px;height:86px;line-height:36px;display:block;text-align:right;}
+.responsibilities_span{width:579px;height:86px;display:block;}
+.responsibilities{width:366px;height:86px;display:block;outline:none;}
+
+.add_team{width:730px;height:36px;line-height:36px;margin:0px auto;}
+.add_team.border_top{border-top:#d0d3d9 1px solid;}
+.border_top{border-top:#d0d3d9 1px solid;}
+
+
+#step5 #pro_video_intro{padding-left:8px;outline:none;width:338px;*width:330px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+#step5 #income_source,#step5 #user_need,#step5 #solution,#step5 #pro_advantage,#step5 #require_scene,#step5 #market_analyze,#step5 #development_planning,#step5 #other{padding-left:8px;outline:none;width:338px;*width:330px;height:86px;line-height:20px;border:#d0d3d9 1px solid;border-radius:5px;}
+#step5 .choose_file_tips{width:240px;height:70px;line-height:36px;float:left;margin-left:16px;color:#c4c4c4;}
+#step5 .choose_file_tips span{width:100%;height:30px;line-height:30px;display:block;}
+#step5 .pro_name_row_center_{border:#e8e8e8 1px solid;border-radius:3px;width:579px;}
+#step5 .pro_name_row_center_1{border:0;}
+#step5 ul{list-style:none;width:545px;height:auto;margin:auto auto;}
+#step5 ul li{width:545px;height:35px;margin-top:20px;}
+#step5 ul li span{width:227px;height:33px;display:block;border:#d0d3d9 1px solid;border-radius:5px;float:left;}
+#iscreated{padding-left:8px;outline:none;width:338px;*width:330px;height:38px;line-height:38px;border:#d0d3d9 1px solid;border-radius:5px;}
+#registered_capital,#company_name,#create_time,#legal_person{padding-left:8px;outline:none;width:298px;*width:280px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+.unit_label_01{width:auto;height:34px;line-height:34px;display:block;color:#999999;text-align:right;}
+#funding,#stock,#stock_01,#stock_02,#stock_03{padding-left:8px;outline:none;width:297px;*width:280px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+.recruit{padding-left:8px;outline:none;width:338px;*width:138px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+#purpose{padding-left:8px;outline:none;width:338px;*width:330px;height:86px;line-height:20px;border:#d0d3d9 1px solid;border-radius:5px;}
+.sub_btn{width:230px;height:50px;display:block;line-height:50px;background-color:#ff6633;border-radius:5px;text-align:center;font-size:1.3em;color:#fff;cursor:pointer;}
+.sub_btn:hover{background-color:#f55c29;}
+.protocol_span{width:400px;height:auto;}
+
+.success_tips{margin:30px auto;width:1000px;padding-top:103px;padding-bottom:108px;background-color:#fff;box-shadow:0px 3px 5px #dddee1;-moz-box-shadow:0px 3px 5px #dddee1;-webkit-box-shadow:0px 3px 5px #dddee1;}
+.success_tips_top{width:426px;height:56px;display:block;margin:0px auto;}
+.success_tips_top_icon{height:56px;width:56px;}
+.success_tips_top_content{font-size:1.6em;width:auto;height:56px;line-height:56px;display:block;margin-left:10px;float:left;}
+.sure_btn{width:121px;height:30px;line-height:30px;text-align:center;color:#fff;display:block;margin:22px auto 0 auto;background-color:#6699ff;border-radius:5px;}
+.sure_btn:hover{background-color:#578cf8;}
+.mouse_over_border:hover{border-color:#facd89;}
+#pro_chengzhang{padding-left:8px;outline:none;width:338px;*width:330px;height:34px;line-height:34px;border:#d0d3d9 1px solid;border-radius:5px;}
+#pro_chengzhang_intro{margin-top:10px;padding-left:8px;outline:none;width:338px;*width:330px;height:86px;line-height:20px;border:#d0d3d9 1px solid;border-radius:5px;}
+.dropdown-select{border-radius:5px;}

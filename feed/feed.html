@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>feed</title>
+</head>
+<body>
+<div id="feedCard"></div>
+         
+
+	<script type="text/javascript">
+  var FEED_CARD_INFO = {
+    containerID: 'feedCard', // 容器ID
+    containerWidth: 660, // 默认宽度是660
+    loadType: 1, // 加载类型 1表示点击更多加载, 2表示自动加载
+    autoLoadDistance: function(){
+      //return $('#wb_rec').height() + 740;
+      return $(document).height() - $('#relatedNewsWrap').height() - $('#relatedNewsWrap').offset().top + 100;
+    }, // 如果是自动加载, 有时候feed流并没有放在最下面, 所以scrollEnd的时候要判断这个距离
+    clickLoadText: '点击加载更多',
+    summaryKey: 'summary', // 摘要使用字段
+
+    supportNotification: false,// 最左边的列表是否添加提醒功能
+    notificationTemplate: '有{n}条消息，点击查看',// 提醒的格式
+    notificationTimeout: 1000 * 30,// 提醒的事件间隔
+
+    pageSize: 5, // 每次加载条数
+    stepSize: 2, // 加载三次之后出分页
+    moreTagTemplate: '点击查看更多关于“{n}”的文章',
+
+    /*
+     * 评论相关配置
+     */
+    // 1. 是否支持当前页展开评论
+    enablePageComment: true,
+    // 2. 评论组件编码,默认是gbk
+    pageCommentEncoding: 'utf-8',
+    // 3. 是否显示盖楼,默认0,还可以为1
+    pageCommentShowReply: 0,
+    // 4. 评论显示字数
+    pageCommentMaxWordCount: 110,
+    // 5. 最热评论默认显示条数
+    pageCommentHotPageNum: 3,
+    // 6. 最新评论默认显示条数
+    pageCommentFirstPageNum: 10,
+
+    supportTabEdit: false, //是否支持兴趣设置
+
+    toFilterNews: [], // 过滤从feed系统走，此处可置空
+
+    isTabFixed: true,
+    fixedTop: 0,
+
+    supportKeywords: false, // 是否支持热词定制
+    hotKeywords: [],
+    keywords: [], // 默认选定的关键词
+    maxKeywordsCount: 15,
+    maxKeywordLength: 14,
+    searchQuery: '',
+    tagURL: 'http://tags.news.sina.com.cn',
+
+    hotNewsCount: 200, //评论超过该数字显示热icon
+
+    yPosition: 'auto', // 如果不固定，则给一个auto，自动计算
+    tabHeight: 50,
+
+    noDataText: '没有相关新闻',
+
+    // 最左边固定tab
+    firstTab: {
+      txt: '最新',
+      lid: -2000,
+      css_width: 40
+    },
+
+    // 栏目分类配置
+    columnInfos: {
+    },
+    tabs: [],
+    allTabs: [],
+
+    tabInfos: {
+      'tab_-2000': {
+        txt: '最新',
+        lid: -2000,
+        css_width: 40,
+        url: 'http://cre.mix.sina.com.cn/api/v3/get?rfunc=103&fields=url&feed_fmt=1&cateid=1o_1p&cre=newspagepc&mod=f&merge=3&statics=1&this_page=1&dedup=32&pageurl=http://news.sina.com.cn/c/2015-11-23/doc-ifxkwuwy7068759.shtml'
+      }
+    },
+    requireLogin: function(){
+    },
+    isLogin: function(){
+    }
+  };
+</script>
+</body>
+</html>

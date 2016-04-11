@@ -1,0 +1,78 @@
+/*项目专区样式*/
+.pro-top{height:280px;width:100%;background: url('../images/pro_banner.png');}
+.pro-banner{height:280px;width:1200px;margin:0 auto;color:#fff;}
+.pro-miaoshu{height:178px;line-height:178px;width:894px;margin:0 auto;font-size:72px;font-weight: bold;}
+.submit-apply{height:60px;width:245px;margin:0 auto;text-align: center;line-height: 56px;cursor:pointer;border:2px solid #a3b9f0;font-size:30px;color:#fff;border: 2px solid rgba(255,255,255,0.6); }
+.submit-apply:hover{border: 2px solid rgba(255,255,255,0.5);}
+.pro-top-next{width:100%;height:62px;background: #fff;}
+*{margin:0px;padding:0px;list-style-type:none;}
+.nav{width:1200px;height:36px;background:#fff;margin:0 auto;padding-top:12px;}
+.search-pro{width:280px;+width:280px;height:40px;line-height:40px;border:1px solid #e6e8ec;float:right;font-family:"microsoft yaHei";color:#b0b0b0;padding-left:12px;font-size:14px;background:url('../images/search.png');}
+.pro-publicbg{margin-top:0px;border-top:1px solid #dee1e6; border-bottom:1px solid #dee1e6;background:#f3f5f8;}
+.project-main .clearfix li{margin-top:40px;}
+.project-main{margin-top:0px;}
+.project-bottom{width:1200px;margin:0 auto;}
+.chakan-gengduo{height:120px;}
+* { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+
+
+
+/*投资人样式*/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+input{font-family:"microsoft yaHei";margin-right:12px;}
+select{font-family:"microsoft yaHei";margin-right:12px;}
+.touziren-zhuti{background: #f3f5f8;width:100%;}
+.touziren-main{width:1200px;margin:0 auto;background: #fff;}
+body{background: #fff;}
+.touziren-content{height:164px;width:1200px;border-bottom: 1px solid #e2e3e6;}
+.touziren-left{height:120px;width:440px;float:left;margin:22px 0px 22px 20px;}
+.touziren-right{height:115px;width:611px;float:left;margin:22px 0px 26px 105px;}
+.touziren-right-img{width:174px;height:112px;margin-right:10px;float:left;}
+.touziren-right-more{width:44px;height:114px;border: 1px solid #c8c8c8;float:left;line-height: 110px;text-align: center;font-size:40px;color:#c8c8c8;cursor: pointer;font-family:sans-serif;}
+.touziren-right-more:hover{color:#ff5656;border: 1px solid #ff5656;}
+.touziren-peo{height:120px;width:120px;float:left;}
+.touziren-peo-right{height:120px;width:248px;float:left;margin-left:22px;}
+.touziren-name{color:#737373;font-size:18px;width:248px;height:30px;}
+.name-div{height:30px;float:left;color:#000;}
+.name-div a:hover{color:#ff5656;}
+.yirenzheng{height:22px;width:60px;float:left;background: url('../images/small_tupian.png');background-position:0px -108px;font-size:12px;color:#8ec100;line-height:24px;text-align: center;}
+.dizhi-hangye{width:198px;height:24px;clear: both;}
+.fensi-renqi{height:20px;width:198px;}
+.dizhi-img{width:22px;height:20px;float:left;background: url('../images/small_tupian.png');background-position:0px -38px;}
+.fensi{width:88px;height:20px;float:left;}
+.renqi{width:88px;height:20px;float:left;}
+.guanzhu-sixin{height:25px;width:198px;color:#fff;font-size:12px;line-height: 25px;margin-top:20px;clear: both;}
+.jiaguanzhu{width:82px;height:25px;background: #ff5656;cursor: pointer;float:left;margin-right:10px;}
+.fasixin{width:82px;height:25px;background: #505152;cursor: pointer;float:left;}
+.touziren-jia{height:25px;width:20px;float:left;font-size:22px;line-height: 22px;margin-left:8px;}
+.jiaguanzhu-wenzi{width:40px;height:25px;line-height: 25px;float:left;}
+.fasixin-img{height:22px;width:20px;float:left;background: url('../images/small_tupian.png');background-position:0px -58px;margin-right:6px;margin-left:6px;font-size:12px;color:#8ec100;line-height:24px;text-align: center;}
+.juse-tubiao{height:22px;width:20px;float:left;background: url('../images/small_tupian.png');background-position:0px -81px;font-size:12px;color:#8ec100;line-height:24px;text-align: center;}
+.search-name{width:141px;height:34px;line-height:34px;margin-right:8px;border:1px solid #e6e8ec;float:left;color:#a1a0a0;padding-left:12px;font-size:16px;font-family:"microsoft yaHei";}
+.touziren-sosuo{background: #ff5656;color:#fff;font-size:16px;width:80px;height:36px;border:0px;float:left;font-family:"microsoft yaHei";}
+.touziren-sosuo:hover{background: #eb4c4c;}
+.touziren-height{height:34px;border-top:1px solid #e2e3e6;width:100%;}
+.clear-both{clear:both;}
+.yuanjiao{-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius:4px;}
+.mod-dropdownlist .dropdown-select{height: 34px;line-height: 34px;}
+
+
+
+
+
+    /*发私信弹出框样式*/
+.sixindiyi{width:572px;height:40px;}
+.sixin-wenziyi span{color:#ff5656;}
+.sixindier{width:572px;height:110px;margin-top:10px;}
+.sixin-wenziyi{width:82px;height:40px;float:left;}
+.wenziyi-input{width:490px;height:40px;float:left;}
+.wenziyi-input input{width:490px;height:40px;}
+.wenzier-input{height:110px;width:490px;float:left;}
+.wenzier-input input{width:490px;height:110px;}
+
+
+
+
+
+
+

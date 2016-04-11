@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="gb2312">
+    <title>自定义提示文字</title>
+    <link rel="stylesheet" type="text/css" href="../css/comment.css"></head>
+    <style type="text/css">
+    .sina-comment-wrap{width:99%;margin:0 auto;}
+    </style>
+<body>
+<div class="sina-comment-wrap" id="SI_FormList1"></div>
+<script type="text/javascript" src="http://i.sso.sina.com.cn/js/outlogin_layer.js" charset="utf-8"></script>
+<script charset="utf-8" src="../js/base.js"></script><script charset="utf-8" src="../js/msg.js"></script>
+<script charset="utf-8" src="../js/login.js"></script>
+<script charset="utf-8" src="../js/app.js"></script>
+<script charset="utf-8" src="../js/cmnt.js"></script>
+<script charset="utf-8">
+    (function(exports) {
+        var $ = exports.___sinacMNT___;
+        $.msg.set('I007', '点我发布呀');
+        FormList1 = new $.cmnt.FormList('SI_FormList1', {
+            channel: 'ty',
+            newsid: '6-12-342371',
+            parent: '',
+            encoding: 'gbk'
+        }, {
+            channel: 'ty',
+            newsid: '6-12-342371',
+            //style=1本来为皮肤，应该为group=1
+            group: 1,
+            encoding: 'gbk',
+            page: 1,
+            pageSize: 20,
+            maxFloor: 20
+        }, {});
+
+    })(window);
+</script>
+</body>
+</html>

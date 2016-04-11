@@ -1,0 +1,69 @@
+@charset "gb2312";
+/* svn...ui/project/comment3/css/report.css */
+/* [${p_id},${t_id},${d_id}] published at ${publishdate} ${publishtime} */
+
+/* ≥ı ºªØCSS */
+html, body, ul, li, ol, dl, dd, dt, p,form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; }
+input::-moz-focus-inner {border:none;padding:0;}
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+input[type="text"], input[type="password"], textarea { outline-style:none;}
+textarea { resize:none; }
+table { border-collapse:collapse; }
+body { background:#fff; color:#333; padding:0; font:14px/24px "Microsoft Yahei","Œ¢»Ì—≈∫⁄","SimSun","ÀŒÃÂ","Arial Narrow",serif; }
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+a { color:#333; text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active, a:focus { color:#c00; text-decoration:none; }
+h1, h2, h3, h4, h5, em { margin:0; padding:0;font-weight:normal; }
+.wrap { width:1000px; margin:0 auto;position: relative;}
+.main h1{font-size: 30px;line-height: 50px;padding: 40px 0 0 0;border-bottom: 2px solid #666;color:#333;font-weight: bold;font-family:"Microsoft Yahei","Œ¢»Ì—≈∫⁄"; }
+/* footer */
+.footer {clear:both; border-top:solid 1px #ccc; padding:15px 0; text-align:center; line-height:30px; color:#999; margin:15px 0 0 }
+.footer a:link, .footer a:visited { color:#999; }
+.footer a:hover { color:#f00 }
+
+.report-wrap{padding: 0 10px 100px;}
+.report-wrap h2{line-height:45px;margin-bottom: 15px;color:#666;font-size: 16px; }
+.report-types-list{color:#010101;font-size: 15px;width:650px;}
+.report-types-list li{float: left;display: inline;line-height: 20px;margin:0 42px 20px 0;}
+.report-types-list input{margin:0 5px 0 0;}
+.report-cont{display: block;line-height:24px;font-size:14px;color:#333;width:972px;height:120px;padding: 4px;font-family:"Microsoft Yahei","Œ¢»Ì—≈∫⁄";border:1px solid #ccc;border-radius: 4px; }
+.report-wrap .btn{width:148px;height:38px;border:1px solid #DCDCDC;color:#333 !important;font-size: 17px;line-height: 38px;text-align: center;border-radius: 4px;margin:0 10px 0 0;float: right;display: inline;}
+.report-wrap .btn:hover{background: #EDEDED;}
+.report-wrap .btn-yellow{border-color:#FF8500;color:#fff !important;background: #FF8500;}
+.report-wrap .btn-yellow:hover{background: #F46D00;}
+
+.report-wrap .report-msg{position: relative;background-color: #eee;border-radius: 4px;padding: 0 0 20px 0;margin-bottom: 30px;}
+.report-wrap .report-msg .tip{line-height: 45px;padding: 10px 0 0 10px;}
+.report-wrap .report-msg .tip-error{color:#f00;line-height: 45px;padding: 10px 0 0 10px;}
+.report-wrap .item:hover{background: #eee;}
+.report-wrap .item .head{width:50px;height:50px;padding:20px 0 0 20px;}
+.report-wrap .item .head img{border-radius: 25px;}
+.report-wrap .name a:link,.report-wrap .name a:visited{color:#f67400;}
+.report-wrap .name a:hover,.report-wrap .name a:active{color:#c00;}
+.report-wrap .item .cont{margin:-60px 20px 0 85px;}
+.report-wrap .cont .txt{padding:0 0 5px;line-height:24px; font-size:14px;word-wrap:break-word;word-break:break-all;}
+.report-wrap .cont .txt a:link,.report-wrap .cont .txt a:visited{color:#ff8500;}
+.report-wrap .cont .txt a:hover,.report-wrap .cont .txt a:active{color:#c00;}
+.report-wrap .cont .info{margin-bottom: 5px;}
+.report-wrap .cont .area{color:#999; padding-left:15px; }
+.report-wrap .cont .lnk{float: right;*margin-top: -20px;}
+.report-wrap .cont .lnk a:link,.report-wrap .cont .lnk a:visited{color:#f67400;}
+.report-wrap .cont .lnk a:hover,.report-wrap .cont .lnk a:active{color:#c00;}
+.report-wrap .face{vertical-align: middle;}
+.report-wrap .gray{color:#999;}
+.report-wrap .post-tip-wrap{padding: 20px 10px 20px 0;height:30px;}
+.report-wrap .post-tip{line-height: 30px;padding:0 10px;color:#fff;float: right;background: #eee;border-radius: 4px;}
+.report-wrap .post-tip-error{color: red;}
+.report-wrap .post-tip-success{color: green;}
+
+
+
+

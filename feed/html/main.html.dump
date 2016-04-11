@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>带评论框列表</title>
+    <!-- 评论css -->
+    <link rel="stylesheet" type="text/css" href="http://news.sina.com.cn/css/87/20140926/comment.3.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/comment.css">-->
+</head>
+    <style type="text/css">
+    .sina-comment-wrap{width:99%;margin:2px;}
+    </style>
+<body>
+
+<!-- <div class="sina-comment-wrap" id="SI_FormList1"></div> -->
+<div class="sina-comment-wrap" id="SI_FormList1"></div>
+<!-- 登录js -->
+<script type="text/javascript" src="http://i.sso.sina.com.cn/js/outlogin_layer.js" charset="utf-8"></script>
+
+<!-- <script charset="utf-8" src="../js/base.js"></script><script charset="utf-8" src="../js/msg.js"></script>
+<script charset="utf-8" src="../js/login.js"></script>
+<script charset="utf-8" src="../js/app.js"></script>
+<script charset="utf-8" src="../js/cmnt.js"></script> -->
+<!-- 评论js -->
+<script type="text/javascript" src="http://news.sina.com.cn/js/87/20140926/comment.3.min.js"></script>
+<script>
+    // 评论初始化
+    ;(function(exports){
+        var $ = exports.___sinacMNT___;
+        // 保持和页面编码一致，gbk或utf-8
+        $.cmnt.config.encoding = 'utf-8';
+        var FormList1 = new $.cmnt.FormList('SI_FormList1',{
+            // 频道编号
+            channel:'yl',
+            // 新闻id
+            newsid:'28-3-4188538',
+            // 默认为空
+            parent:''
+        },{
+            channel: 'yl',
+            // 新闻id
+            newsid:'28-3-4188538',
+            // 默认为0，多条新闻（图片）集合的评论为1
+            group: 0,
+            // 开始页数，默认为1
+            page: 1,
+            // 每页评论条数
+            pageSize: 20,
+            // 最大楼层
+            maxFloor:1,
+             // 隐藏评论列表，只显示评论框
+            hideList:0
+            // // 最新评论默认显示条数
+            // hotPageNum:5,
+            // // 最新评论默认显示条数
+            // firstPageNum:5,
+            // // 可点击最新评论正文“更多评论”按钮次数,达到该次数后，显示“查看更多评论”链接，再点击则跳转
+            // clickMoreTimes:3
+        },{});
+    })(window);
+</script>
+</body>
+</html>

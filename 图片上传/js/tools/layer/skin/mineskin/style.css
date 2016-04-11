@@ -1,0 +1,11 @@
+html #layui_layer_skinmineskinstylecss{display:none; position: absolute; width:1989px;}
+body .layui-layer{border-radius:5px;}
+body .layer-ext-mineskin *{font-family:"microsoft yahei";}
+body .layer-ext-mineskin .layui-layer-title{font-size:1.2em;height:45px;line-height:45px;background-color:#f5f3f3;border-radius:5px 5px 0px 0px;color:#3e3e3e;}
+body .layer-ext-mineskin .layui-layer-content{height:auto !important;overflow:visible;color:#3e3e3e;border-radius:0px 0px 5px 5px;font-size:0.9em;text-indent:1.8em;}
+body .layer-ext-mineskin .layui-layer-btn0{border-radius:5px;background-color:#eb6a64;width:120px;height:36px;line-height:36px;font-size:1em;}
+body .layer-ext-mineskin .layui-layer-btn1{border-radius:5px;background-color:#afbcd8;width:120px;height:36px;line-height:36px;font-size:1em;}
+body .layer-ext-mineskin .layui-layer-ico{background-image:url(../../../../../images/user.png);background-repeat:none;background-position:-140px -8px;}
+body .layer-ext-mineskin .layui-layer-setwin .layui-layer-close1:hover{background-position:-140px -8px;}
+body .layer-ext-mineskin .layui-layer-setwin{top:18px;}
+body .layer-ext-mineskin .layui-layer-btn{height:50px;}

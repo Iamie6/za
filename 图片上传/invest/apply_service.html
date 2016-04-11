@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>申请为服务机</title>
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/dropdownlist.css" />
+    <link rel="stylesheet" href="../css/invest.css" />
+
+
+
+</head>
+
+<style>
+
+
+</style>
+
+
+<body>
+
+<!--header-->
+<div class="header-top">
+    <ul class="contain clearfix">
+        <li class="fl">客服热线：400-998-9988（8:30 - 21:30）</li>
+        <li class="fr">
+            <!--未登陆显示-->
+            <div class="no-login"  style="display:none">
+                您好，
+                <a href="javascript:;" title="请登录">请登录</a>
+                <a href="javascript:;" title="免费注册" class="register">免费注册</a> |
+                <a href="javascript:;" title="常见问题" class="question">常见问题</a>
+            </div>
+            <!--已登陆显示-->
+            <div class="login" style="display:block;">
+                您好，
+                <a href="javascript:;" title="用户名">13588886666</a>
+                <a href="javascript:;" title="退出" class="register">退出</a> |
+                <a href="javascript:;" title="常见问题" class="question">常见问题</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="headerbox">
+    <div class="header-nav contain clearfix">
+        <div class="logo fl">
+            <img src="../images/logo.png" alt="关于我们" title="卡贝基金"/>
+        </div>
+        <div class="navlist fl">
+            <a href="../index.html" title="首页" class="active">首页</a>
+            <a href="../project.html" title="项目专区">项目专区</a>
+            <a href="../investor.html" title="投资人">投资人</a>
+            <a href="#" title="机构专区">机构专区</a>
+            <a href="about.html" title="关于我们">关于我们</a>
+        </div>
+        <div class="myaccount fr">
+            <!--未登陆显示-->
+            <div class="myac myacnlogin" style="display:none;">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户" >我的帐户</a>
+                <span class="pulldown"></span>
+            </div>
+
+            <!--已登陆显示-->
+            <div class="myac loginmyac loginmyacv" style="display:block;">
+                <span class="portrait"></span>
+                <a href="javascript:;" class="myaca" title="我的帐户">我的帐户</a>
+                <span class="pulldown"></span>
+                <div class="myac-details">
+                    <p><a href="javascript:;" title="我的主页">我的主页</a></p>
+                    <p><a href="javascript:;" title="个人中心">个人中心</a></p>
+                    <p class="nob"><a  href="javascript:;" title="消息">消息(21)</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--header end-->
+<!--导航悬浮-->
+<div class="suspend" style="display:none;">
+    <div class="suspend-nav contain clearfix">
+        <div class="logo1 fl">
+            <img src="../images/logo1.png" alt="卡贝基金" title="卡贝基金"/>
+        </div>
+        <div class="navlist suspend-navlist fl">
+            <a href="javascript:;" title="首页" class="active">首页</a>
+            <a href="javascript:;" title="项目专区">项目专区</a>
+            <a href="javascript:;" title="投资人">投资人</a>
+            <a href="javascript:;" title="机构专区">机构专区</a>
+            <a href="javascript:;" title="关于我们">关于我们</a>
+        </div>
+        <div class="myaccount fr">
+            <!--未登陆显示-->
+            <div class="myac myacnlogin suspendl" style="display:none;">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户">我的帐户</a>
+                <span class="pulldown"></span>
+            </div>
+
+            <!--已登陆显示-->
+            <div class="myac loginmyac loginmyacv suspendl" style="display:block">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户" class="myaca">我的帐户</a>
+                <span class="pulldown"></span>
+                <div class="myac-details">
+                    <p><a href="#" title="我的主页">我的主页</a></p>
+                    <p><a href="javascript:;" title="个人中心">个人中心</a></p>
+                    <p class="nob"><a  href="javascript:;" title="消息">消息(21)</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导航悬浮 end-->
+
+<div class="shenqing-height"></div>
+
+
+
+<div class="fuwu-liucheng yinying">
+
+    <div class="liucheng-height"></div>
+
+    <div class="liucheng-pic"></div>
+
+    <div class="liucheng-pic1"></div>
+
+    <div class="liucheng-pic2"></div>
+
+</div>
+
+
+
+<div class="fuwu-height"></div>
+
+<!--基本信息开始-->
+<div class="fuwu-main shadow-down" id="fuwu-biaodan">
+
+<div class="fuwu-biaoti"><span>基本信息</span></div>
+<div class="fuwu-biaodan">
+
+    <div class="zhenshi-xingming">
+        <div class="input-qianmian">机构名称<span>*</span></div><div class="input-biaozhun"><input  type="text"/></div>
+    </div>
+    <div class="yanzheng"></div>
+
+    <div class="zhenshi-xingming">
+        <div class="input-qianmian">所在城市<span>*</span></div>
+        <div class="input-biaozhun">
+            <div id="sjld" style="width:314px;height:36px;float:left;position:relative;">
+                <div class="m_zlxg yuanjiao" id="shenfen">
+                    <p title="">省份</p>
+                    <div class="m_zlxg2">
+                        <ul></ul>
+                    </div>
+                </div>
+                <div class="m_zlxg yuanjiao" id="chengshi">
+                    <p title="">城市</p>
+                    <div class="m_zlxg2">
+                        <ul></ul>
+                    </div>
+                </div>
+
+                <input id="sfdq_num" type="hidden" value="" />
+                <input id="csdq_num" type="hidden" value="" />
+                <input id="sfdq_tj" type="hidden" value="" />
+                <input id="csdq_tj" type="hidden" value="" />
+                <input id="qydq_tj" type="hidden" value="" />
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="zhenshi-xingming biaodan-height">
+        <div class="input-qianmian">机构地址<span>*</span></div><div class="input-biaozhun"><input type="text"/></div>
+    </div>
+    <div class="yanzheng"></div>
+
+
+    <div class="zhenshi-xingming">
+        <div class="input-qianmian">注册资本<span>*</span></div><div class="input-biaozhun"><input type="text"/></div>
+    </div>
+    <div class="yanzheng"></div>
+
+
+    <div class="shangchuan check-width">
+
+        <div class="input-qianmian">机构类型<span>*</span></div>
+
+        <div class="checkbox">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="checkbox-wenzi">律师事务所</div>
+        </div>
+
+        <div class="checkbox">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="checkbox-wenzi">会计事务所</div>
+        </div>
+
+        <div class="checkbox-short">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="short-wenzi">银行</div>
+        </div>
+
+        <div class="checkbox-short">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="short-wenzi">卷商</div>
+        </div>
+
+        <div class="checkbox">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="checkbox-wenzi">保险</div>
+        </div>
+
+        <div class="checkbox">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="checkbox-wenzi">信托</div>
+        </div>
+
+        <div class="checkbox-short">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="short-wenzi">基金</div>
+        </div>
+
+        <div class="checkbox-short">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="short-wenzi">综合</div>
+        </div>
+
+        <div class="checkbox-short">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="short-wenzi">其它</div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="shangchuan">
+
+        <div class="input-qianmian">营业执照<span>*</span></div>
+        <div class="input-shangchuan">
+            <input type="button"  onclick="path.click()" class="mingpian-shangchuan">
+            <input type="file" id="path" style="display:none">
+        </div>
+
+        <div class="zhizhao">*文件大小请勿超过8MB</div>
+
+    </div>
+
+
+
+    <div class="miaoshu-div biaodan-height">
+        <div class="input-qianmian">机构介绍<span>&nbsp;</span></div>
+        <div class="input-miaoshu">
+            <textarea class="ziwo-miaoshu"></textarea>
+        </div>
+    </div>
+
+    <div class="save-btn yuanjiao" id="liucheng">保存，进行下一步</div>
+
+    <div class="biaodan-down"></div>
+
+
+</div>
+
+</div>
+<!--基本信息结束-->
+
+<!--机构成员开始-->
+<div class="fuwu-main shadow-down" id="fuwu-biaodan1">
+
+    <div class="fuwu-biaoti"><span>机构成员</span></div>
+
+    <div class="jigou-wenzi"><span>*第一个团队成员默认是核心负责人，负责人信息为必填选项。</span></div>
+
+    <div class="jigou-biaodan">
+
+    <div class="shangchuan">
+
+        <div class="input-qianmian">上传头像<span>*</span></div>
+        <div class="input-shangchuan">
+            <input type="button"  onclick="path.click()" class="mingpian-shangchuan">
+            <input type="file" id="path1" style="display:none">
+        </div>
+
+        <div class="zhizhao">*文件大小请勿超过8MB</div>
+
+    </div>
+
+    <div class="zhenshi-xingming biaodan-height">
+        <div class="input-qianmian">真实姓名<span>*</span></div><div class="input-biaozhun"><input type="text"/></div>
+    </div>
+    <div class="yanzheng"></div>
+
+    <div class="zhenshi-xingming">
+        <div class="input-qianmian">联系方式<span>*</span></div><div class="input-biaozhun1"><input id="shouji" type="text"/></div>
+    </div>
+    <div class="yanzheng" id="shouji-yanzheng"></div>
+
+
+    <div class="zhenshi-xingming">
+        <div class="input-qianmian">邮箱<span>*</span></div><div class="input-biaozhun1"><input id="email" type="text"/></div>
+    </div>
+    <div class="yanzheng" id="email-yanzheng"></div>
+
+    <div class="zhenshi-xingming">
+        <div class="input-qianmian">职位<span>*</span></div><div class="input-biaozhun"><input type="text"/></div>
+    </div>
+    <div class="yanzheng"></div>
+
+
+    <div class="zhenshi-xingming">
+        <div class="input-qianmian">所在城市<span>*</span></div>
+        <div class="input-biaozhun">
+            <div id="sjld1" style="width:314px;height:36px;float:left;position:relative;">
+                <div class="m_zlxg yuanjiao" id="shenfen1">
+                    <p title="">省份</p>
+                    <div class="m_zlxg2">
+                        <ul></ul>
+                    </div>
+                </div>
+                <div class="m_zlxg yuanjiao" id="chengshi1">
+                    <p title="">城市</p>
+                    <div class="m_zlxg2">
+                        <ul></ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="miaoshu-div biaodan-height">
+        <div class="input-qianmian">人员介绍<span>&nbsp;</span></div>
+        <div class="input-miaoshu">
+            <textarea class="ziwo-miaoshu"></textarea>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <div class="add-info">+添加团队信息</div>
+
+    <div class="save-btn yuanjiao" id="liucheng1">保存，进行下一步</div>
+
+    <div class="biaodan-down"></div>
+
+
+
+
+</div>
+<!--机构成员结束-->
+
+<!--对接项目开始-->
+<div class="fuwu-main shadow-down" id="fuwu-biaodan2">
+
+    <div class="fuwu-biaoti"><span>对接项目</span></div>
+
+    <div class="duijie-tou">
+        <div id="xuanze-zhiwei">
+            <select id="ddl_picture" class="yuanjiao">
+            <option value="0" id="explain">选择职位</option> <!--设置下拉框说明-->
+            <option value="1">职员</option>
+            <option value="2">主管</option>
+            <option value="3">经理</option>
+            <option value="4">总裁</option>
+
+            </select>
+
+        </div>
+        <div class="gongsi-input"><input type="text" title="" id="project"/></div>
+        <div class="tianjia yuanjiao">添加</div>
+    </div>
+    <div class="yanzheng left-space">请选择所任职位</div>
+
+
+
+    <div class="duijie-project">
+       <div class="dj-left">
+
+           <img src="../images/cheyu_chuanmei.png"/>
+
+       </div>
+
+        <div class="dj-right">
+
+            <div class="name-tou">
+            <div class="company-name">车语传媒</div> <div class="baocun-anniu">保存</div><div class="apply-bianji">编辑</div><div class="shanchu-anniu">删除</div>
+            </div>
+
+
+            <div class="touziren">投资人</div>
+
+            <div class="bianji">
+
+
+                <div class="bianji-div">
+
+                    <div class="bianji-height"></div>
+                    <div class="bianji-hang"><div class="bianji-wenzi">公司名称</div><div><input value="车语传媒" type=""/></div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">职位</div><div><input type=""/></div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">开始时间</div><div><input placeholder="开始时间" class="shijian" id="start" /></div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang">
+                        <div class="bianji-wenzi">结束时间</div>
+                        <div class="shijian-div"><input class="shijian" placeholder="结束时间" id="end"/></div>
+                            <div  class="zhijin-wenzi">至今</div>
+                            <div class="un-select no-select"></div>
+                            <div class="check-left xuanze-left"></div>
+                    </div>
+                    <span class="span-yanzheng"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+       <div class="clear-both"></div>
+
+       <div class="down-border"></div>
+
+    </div>
+
+    <div class="duijie-project">
+        <div class="dj-left">
+
+            <img src="../images/cheyu_chuanmei.png"/>
+
+        </div>
+
+        <div class="dj-right">
+
+            <div class="name-tou">
+                <div class="company-name">车语传媒</div> <div class="baocun-anniu">保存</div><div class="apply-bianji">编辑</div><div class="shanchu-anniu">删除</div>
+            </div>
+
+
+            <div class="touziren">投资人</div>
+
+            <div class="bianji-meiyou">
+
+                <div class="bianji-div">
+                    <div class="bianji-height"></div>
+                    <div class="bianji-hang"><div class="bianji-wenzi">公司名称</div><div><input value="车语传媒" type=""/></div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">投资时间</div><div><input placeholder="时间点" class="shijian" id="shijiandian" type=""/></div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">身份角色</div>
+                        <div>
+                            <select id="shenfen-juese" class="yuanjiao">
+                                <option value="1">角色1</option>
+                                <option value="2">角色2</option>
+                                <option value="3">角色3</option>
+                                <option value="4">角色4</option>
+                                <option value="5">角色5</option>
+                           </select>
+                        </div>
+                    </div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">项目阶段</div>
+                        <div>
+                            <select id="xiangmu-jieduan" class="yuanjiao">
+                                <option value="1">项目阶段1</option>
+                                <option value="2">项目阶段2</option>
+                                <option value="3">项目阶段3</option>
+                                <option value="4">项目阶段4</option>
+                                <option value="5">项目阶段5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">投资金额</div><div class="tou-jine"><input type=""/></div><div class="danwei">万元</div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">本轮融资总额</div><div class="tou-jine"><input type=""/></div><div class="danwei">万元</div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">融资前估值</div><div class="tou-jine"><input type=""/></div><div class="danwei">万元</div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">是否成功退出</div>
+                        <div>
+                            <select id="shifou-tuichu" class="yuanjiao">
+                                <option value="1">是</option>
+                                <option value="2">否</option>
+                            </select>
+                        </div>
+                    </div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">是否公开本次投资</div>
+                        <div>
+                            <select id="shifou-gongkai" class="yuanjiao">
+                                <option value="1">是</option>
+                                <option value="2">否</option>
+                            </select>
+                        </div>
+                    </div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang"><div class="bianji-wenzi">创始人姓名</div><div><input type=""/></div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang1"><div class="bianji-wenzi">创始人手机</div><div><input class="chuangshi-shouji" type=""/></div></div>
+                    <span class="span-yanzheng"></span>
+                    <div class="bianji-hang1"><div class="bianji-wenzi">创始人邮箱</div><div><input class="chuangshi-email" type=""/></div></div>
+                    <span class="span-yanzheng"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="clear-both"></div>
+
+        <div class="down-border"></div>
+
+    </div>
+
+    <div class="clear-both" id="add-project"></div>
+
+
+
+    <div class="tijiao-ziliao">提交资料，等待审批</div>
+
+
+    <div class="fuwuji-down">
+        <div class="yiyuedu">
+            <div class="un-select" ></div>
+            <div class="check-left"></div>
+            <div  class="yuedu-wenzi">阅读并同意卡贝金融的《卡贝金融融资咨询顾问协议》</div>
+        </div>
+
+        <div class="yanzheng">工作人员会在48小时内审核，如果有问题将和您联系</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+<!--对接项目结束-->
+
+
+
+<div class="fuwu-down"></div>
+
+
+
+<!--footer-->
+<div class="footer">
+    <div class="contain footer-main clearfix">
+        <div class="footer-l fl">
+            <p class="footer-lt">
+                <a href="javascript:;" target="_blank" title="关于卡贝金融">关于卡贝金融</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="风险提示">风险提示</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="成功案例">成功案例</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="媒体报道">媒体报道</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="合作伙伴">合作伙伴</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="联系我们">联系我们</a>
+            </p>
+            <p>Copyright © 2004-2015 卡贝基金 版权所有 | 投资有风险，购买需谨慎</p>
+        </div>
+        <div class="footer-r fl">
+            <p>联系我们（9:00-22:00）</p>
+            <p class="tel">
+                400-666-6666<span>（个人咨询）</span><br/>
+                400-888-8888<span>（企业咨询）</span>
+            </p>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+<!--返回顶部-->
+<div class="back-top">
+    <a href="#top">^</a>
+</div>
+<!--返回顶部 end-->
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/laydate.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/dropdownlist.js"></script>
+<script src="../js/address.js"></script>
+<script src="../js/apply.js"></script>
+
+
+
+</body>
+</html>

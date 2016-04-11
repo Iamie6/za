@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="gb2312">
+    <title>我的评论和回复我的</title>
+    <link rel="stylesheet" type="text/css" href="../../css/my2/comment.css"></head>
+    <style type="text/css">
+    .my-sina-comment-wrap{width:49%;float:left;display:inline;}
+    </style>
+<body>
+<div class="my-sina-comment-wrap">
+  <div class="my-sina-comment-list" comment-type="list" id="SI_List1"></div>
+</div>
+<div class="my-sina-comment-wrap">
+  <div class="my-sina-comment-list" comment-type="list" id="SI_List2"></div>
+</div>
+<script type="text/javascript" src="http://i.sso.sina.com.cn/js/outlogin_layer.js" charset="utf-8"></script>
+<script charset="utf-8" src="../../js/my2/base.js"></script>
+<script charset="utf-8" src="../../js/my2/msg.js"></script>
+<script charset="utf-8" src="../../js/my2/login.js"></script>
+<script charset="utf-8" src="../../js/my2/app.js"></script>
+<script charset="utf-8" src="../../js/my2/cmnt.js"></script>
+<script charset="utf-8">
+    var console = (function (con) {
+      // the dummy function
+      function dummy() {};
+      // console methods that may exist
+      for(var methods = 'assert count debug dir dirxml error exception group groupCollapsed groupEnd info log markTimeline profile profileEnd time timeEnd trace warn'.split(' '), func; func = methods.pop();) {
+          con[func] = con[func] || dummy;
+      }
+      return con;
+    }(window.console = window.console || {}));
+    (function(exports) {
+      var getParam = function(key) {
+          var params = location.search;
+          if (params) {
+              var arr = params.substr(1).split('&');
+              for (var i = 0; i < arr.length; i++) {
+                  data = arr[i].split('=');
+                  if (data[0] == key) {
+                      return data[1];
+                  }
+              }
+          }
+      };
+      var ReachBottom = (function(){
+        var addEvent = function(el, type, fn, captrue) {
+          if (typeof captrue == 'undefined') {
+            captrue = false;
+          }
+          if (el.addEventListener) {
+            el.addEventListener(type, fn, captrue);
+            return true;
+          } else if (el.attachEvent) {
+            el.attachEvent('on' + type, fn);
+            return true;
+          } else {
+            el['on' + type] = fn;
+          }
+        };
+        var throttle = function(fn, delay){
+            var timer = null;
+            return function(){
+                var context = this, args = arguments;
+                clearTimeout(timer);
+                timer = setTimeout(function(){
+                    fn.apply(context, args);
+                }, delay);
+            };
+         };
+        var toBottom = (function() {
+          var docEle = document.documentElement;
+          var docBody = document.body;
+          var _min = Math.min;
+          var _max = Math.max;
+          return function() {
+            var scrollTop = 0;
+            var clientHeight = 0;
+            var scrollHeight = 0;
+            try {
+              if (docEle && docEle.scrollTop) {
+                scrollTop = docEle.scrollTop;
+              } else if (docBody) {
+                scrollTop = docBody.scrollTop;
+              }
+              if (docBody.clientHeight && docEle.clientHeight) {
+                clientHeight = _min(docBody.clientHeight, docEle.clientHeight)
+              } else {
+                clientHeight = _max(docBody.clientHeight, docEle.clientHeight);
+              }
+              scrollHeight = _max(docBody.scrollHeight, docEle.scrollHeight);
+              return (scrollHeight - scrollTop - clientHeight);
+            } catch (e) {
+              return false;
+            }
+          };
+        })();
+        var fns = [];
+        var inited = false;
+        return function(fn){
+          fns.push(fn);
+          if(!inited){
+            var thottle1 = throttle(function(){
+              for (var i = 0, len = fns.length; i < len; i++) {
+                var fn = fns[i];
+                if(typeof fn === 'function'){
+                  fn(toBottom());
+                }
+              }
+            },100);
+            addEvent(window, 'scroll', function() {
+              thottle1();
+            });
+          }
+        };
+      })();
+      // 我 1822079330 zy 2219574291  测试 2470351841
+      var uid = getParam('uid')||'2470351841';
+      var _ = exports.___mysInacMNT___;
+      // 回复
+      List1 = new _.cmnt.List('SI_List1', 'http://comment5.news.sina.com.cn/user/reply?uid=' + uid, {
+        uid:uid,
+        type: 'reply',
+        page: 1,
+        pageSize: 20
+      });
+      // 评论
+      List2 = new _.cmnt.List('SI_List2', 'http://comment5.news.sina.com.cn/user/cmnt?uid=' + uid, {
+        uid:uid,
+        type: 'cmnt',
+        page: 1,
+        pageSize: 20
+      });
+      var ListNum = 5;
+      var getPage = function(list){
+         return list.get('opt.param.page')
+      };
+      var hasPager1 = false;
+      var hasPager2 = false;
+      ReachBottom(function(gap){
+
+        if(gap<50){
+          if(!hasPager1){
+            var page1 = getPage(List1);
+            page1++;
+            List1.setPage(page1).getData(function(){
+              if(page1%3===0){
+                  console.log('要出分页了，滚动应该失效');
+                  // hasPager1 = true;
+              }
+            });
+          }
+
+          if(!hasPager2){
+            var page2 = getPage(List2);
+            page2++;
+            List2.setPage(page2).getData(function(){
+              if(page2%3===0){
+                  console.log('要出分页了，滚动应该失效');
+                  // hasPager1 = true;
+              }
+            });
+          }
+        }
+      });
+
+    })(window);
+</script>
+</body>
+</html>

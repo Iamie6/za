@@ -1,0 +1,898 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <title>投资人详情</title>
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/itemdetails.css" />
+    <link rel="stylesheet" href="../css/invest.css" />
+    <link rel="stylesheet" href="../css/dropdownlist.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" />
+
+</head>
+
+
+<body>
+<!--header-->
+<div class="header-top">
+    <ul class="contain clearfix">
+        <li class="fl">客服热线：400-998-9988（8:30 - 21:30）</li>
+        <li class="fr">
+            <!--未登陆显示-->
+            <div class="no-login"  style="display:none">
+                您好，
+                <a href="javascript:;" title="请登录">请登录</a>
+                <a href="javascript:;" title="免费注册" class="register">免费注册</a> |
+                <a href="javascript:;" title="常见问题" class="question">常见问题</a>
+            </div>
+            <!--已登陆显示-->
+            <div class="login" style="display:block;">
+                您好，
+                <a href="javascript:;" title="用户名">13588886666</a>
+                <a href="javascript:;" title="退出" class="register">退出</a> |
+                <a href="javascript:;" title="常见问题" class="question">常见问题</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="headerbox">
+    <div class="header-nav contain clearfix">
+        <div class="logo fl">
+            <img src="../images/logo.png" alt="关于我们" title="卡贝基金"/>
+        </div>
+        <div class="navlist fl">
+            <a href="../index.html" title="首页" class="active">首页</a>
+            <a href="../project.html" title="项目专区">项目专区</a>
+            <a href="../investor.html" title="投资人">投资人</a>
+            <a href="#" title="机构专区">机构专区</a>
+            <a href="../about/about.html" title="关于我们">关于我们</a>
+            <a href="#" title="发布项目">发布项目</a>
+        </div>
+
+        <div class="myaccount fr">
+            <!--未登陆显示-->
+            <div class="myac myacnlogin" style="display:none;">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户" >我的帐户</a>
+                <span class="pulldown"></span>
+            </div>
+
+            <!--已登陆显示-->
+            <div class="myac loginmyac loginmyacv" style="display:block;">
+                <span class="portrait"></span>
+                <a href="javascript:;" class="myaca" title="我的帐户">我的帐户</a>
+                <span class="pulldown"></span>
+                <div class="myac-details">
+                    <p><a href="javascript:;" title="我的主页">我的主页</a></p>
+                    <p><a href="javascript:;" title="个人中心">个人中心</a></p>
+                    <p class="nob"><a  href="javascript:;" title="消息">消息(21)</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--header end-->
+<!--导航悬浮-->
+<div class="suspend" style="display:none;">
+    <div class="suspend-nav contain clearfix">
+        <div class="logo1 fl">
+            <img src="../images/logo1.png" alt="卡贝基金" title="卡贝基金"/>
+        </div>
+        <div class="navlist suspend-navlist fl">
+            <a href="javascript:;" title="首页" class="active">首页</a>
+            <a href="javascript:;" title="项目专区">项目专区</a>
+            <a href="javascript:;" title="投资人">投资人</a>
+            <a href="javascript:;" title="机构专区">机构专区</a>
+            <a href="javascript:;" title="关于我们">关于我们</a>
+            <a href="#" title="发布项目">发布项目</a>
+        </div>
+        <div class="myaccount fr">
+            <!--未登陆显示-->
+            <div class="myac myacnlogin suspendl" style="display:none;">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户">我的帐户</a>
+                <span class="pulldown"></span>
+            </div>
+
+            <!--已登陆显示-->
+            <div class="myac loginmyac loginmyacv suspendl" style="display:block">
+                <span class="portrait"></span>
+                <a href="javascript:;" title="我的帐户" class="myaca">我的帐户</a>
+                <span class="pulldown"></span>
+                <div class="myac-details">
+                    <p><a href="#" title="我的主页">我的主页</a></p>
+                    <p><a href="javascript:;" title="个人中心">个人中心</a></p>
+                    <p class="nob"><a  href="javascript:;" title="消息">消息(21)</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--导航悬浮 end-->
+<!--banner-->
+<div class="banner">
+    <div class="contain inner clearfix">
+        <div class="banner-l fl clearfix">
+            <div class="banner-ltu fl tx">
+                <img src="../images/touziren_touxiang.png" alt="个人头像" title="个人头像"/>
+            </div>
+
+            <div class="banner-lcon fl">
+                <h2>
+                    <a href="javascript:void(0);" title="胡博予" class="btitle">胡博予</a>
+                </h2>
+
+                <div class="kabei-renzheng">卡贝金融认证投资人</div>
+
+                <p>擅长领域：电子商务   网络社区  移动社交</p>
+            </div>
+        </div>
+        <div class="banner-r fr">
+            <p class="attention">
+                <a href="javascript:;" title="关注" class="attenta" onclick="showdialog();">编辑个人信息</a>
+            </p>
+            <p class="share">分享到：
+                <a href="javascript:void(0);" class="icon wx mywx" title="微信"></a>
+                <a href="http://v.t.sina.com.cn/share/share.php?url=http://www.shao-ming.com&title='分享内容'" target="_blank" class="icon wb" title="微博"></a>
+                <a href="http://connect.qq.com/widget/shareqq/index.html?title=qqhaoyou&url=http://www.shao-ming.com&desc=&pics=&site=" target="_blank" class="icon qq" title="QQ"></a>
+                <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.shao-ming.com" target="_blank" class="icon kj " title="空间"></a>
+                <a href="http://share.renren.com/share/buttonshare.do?link=http://www.shao-ming.com" target="_blank" class="icon rr" title="人人"></a>
+            </p>
+            <!--二维码-->
+            <div id="mycode" style="display:none;">
+                <div class="code-top clearfix">
+                    <div class="title fl">
+                        分享到微信
+                    </div>
+                    <div class="close fr">
+                        x
+                    </div>
+                </div>
+                <div class="code-main clearfix">
+                    <div id="code" class="fl"></div>
+                    <div class="word fr">
+                        <p>分享说明：</p>
+                        <p>1、打开微信</p>
+                        <p>2、进入"发现"点击"扫一扫"</p>
+                        <p>3、扫描左侧二维码即可将网页信息分享到微信好友或朋友圈</p>
+                    </div>
+                </div>
+            </div>
+            <!--二维码 end-->
+        </div>
+    </div>
+    <div class="information-con contain">
+        <span class="icon information-a"></span>
+
+        <div class="wenzi-tou"></div>
+        <p class="geren-jieshao">博予有近10年的创业经验。他参与创办了信贷管理软件公司安硕科技最终在创业板上市（股票代码 SHE:300380）。在创办 Blue Lake Capital 之前，博予在著名的风险投资基金DCM工作。另外博予还曾就职于摩根士丹利。</p>
+        <div class="wenzi-wei"></div>
+
+    </div>
+</div>
+
+<!--banner end-->
+
+<div class="touzi-height"></div>
+
+
+<div class="bianji-main">
+
+
+    <div class="bianji-left">
+
+
+        <!-- 投资案例及个人经历开始-->
+        <div class="geren-jingli">
+            过往投资案例及个人经历
+            <div class="edit-div" id="edit-div"><div class="bianji-right">编辑</div><div class="bianji-ico"></div></div>
+        </div>
+        <div class="add-jingli">添加个人经历，包括投资过、任职过的项目或公司。</div>
+        <div class="duijie-tou space-top">
+            <div id="xuanze-zhiwei">
+                <select id="ddl_picture" class="yuanjiao">
+                    <option value="0" id="explain">职员</option> <!--设置下拉框说明-->
+                    <option value="1">职员1</option>
+                    <option value="2">职员2</option>
+                    <option value="3">职员3</option>
+                    <option value="4">职员4</option>
+                    <option value="5">职员3</option>
+                    <option value="6">职员4</option>
+
+                </select>
+
+            </div>
+            <div class="gongsi-input"><input id="project" title="" type="text"/></div>
+            <div class="tianjia yuanjiao" id="pro-tianjia">添加</div>
+        </div>
+        <div class="yanzheng sleft">请选择所任职位</div>
+
+
+
+        <div class="duijie-project sleft" >
+            <div class="dj-left">
+
+                <img src="../images/cheyu_chuanmei.png"/>
+
+            </div>
+
+            <div class="dj-right">
+
+                <div class="name-tou">
+                    <div class="company-name">车语传媒</div> <div class="baocun-anniu" style="display: none;">保存</div><div class="shanchu-anniu" style="display: none;">删除</div><div class="bianji-anniu">待确认</div><div class="yiqueren-anniu">已确认</div>
+                </div>
+
+
+                <div class="touziren">投资人</div>
+
+                <div class="bianji">
+
+
+                    <div class="bianji-div">
+
+                        <div class="bianji-height"></div>
+                        <div class="bianji-hang"><div class="bianji-wenzi">公司名称</div><div><input value="车语传媒" type=""/></div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">职位</div><div><input type=""/></div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">开始时间</div><div><input placeholder="开始时间" class="shijian" id="start" /></div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang">
+                            <div class="bianji-wenzi">结束时间</div>
+                            <div class="shijian-div"><input class="shijian" placeholder="结束时间" id="end"/></div>
+                            <div  class="zhijin-wenzi">至今</div>
+                            <div class="un-select no-select"></div>
+                            <div class="check-left xuanze-left"></div>
+                        </div>
+                        <span class="span-yanzheng"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="clear-both"></div>
+
+            <div class="down-border"></div>
+
+        </div>
+        <div class="duijie-project sleft">
+            <div class="dj-left">
+
+                <img src="../images/cheyu_chuanmei.png"/>
+
+            </div>
+
+            <div class="dj-right">
+
+                <div class="name-tou">
+                    <div class="company-name">车语传媒</div> <div class="baocun-anniu" style="display: none;">保存</div><div class="shanchu-anniu" style="display: none;">删除</div><div class="bianji-anniu">待确认</div><div class="yiqueren-anniu">已确认</div>
+                </div>
+
+
+                <div class="touziren">投资人</div>
+
+                <div class="bianji-meiyou">
+
+                    <div class="bianji-div">
+                        <div class="bianji-height"></div>
+                        <div class="bianji-hang"><div class="bianji-wenzi">公司名称</div><div><input value="车语传媒" type=""/></div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">投资时间</div><div><input placeholder="时间点" class="shijian" id="shijiandian" type=""/></div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">身份角色</div>
+                            <div>
+                                <select id="shenfen-juese" class="yuanjiao">
+                                    <option value="1">角色1</option>
+                                    <option value="2">角色2</option>
+                                    <option value="3">角色3</option>
+                                    <option value="4">角色4</option>
+                                    <option value="5">角色5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">项目阶段</div>
+                            <div>
+                                <select id="xiangmu-jieduan" class="yuanjiao">
+                                    <option value="1">项目阶段1</option>
+                                    <option value="2">项目阶段2</option>
+                                    <option value="3">项目阶段3</option>
+                                    <option value="4">项目阶段4</option>
+                                    <option value="5">项目阶段5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">投资金额</div><div class="tou-jine"><input type=""/></div><div class="danwei">万元</div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">本轮融资总额</div><div class="tou-jine"><input type=""/></div><div class="danwei">万元</div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">融资前估值</div><div class="tou-jine"><input type=""/></div><div class="danwei">万元</div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">是否成功退出</div>
+                            <div>
+                                <select id="shifou-tuichu" class="yuanjiao">
+                                    <option value="1">是</option>
+                                    <option value="2">否</option>
+                                </select>
+                            </div>
+                        </div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">是否公开本次投资</div>
+                            <div>
+                                <select id="shifou-gongkai" class="yuanjiao">
+                                    <option value="1">是</option>
+                                    <option value="2">否</option>
+                                </select>
+                            </div>
+                        </div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang"><div class="bianji-wenzi">创始人姓名</div><div><input type=""/></div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang1"><div class="bianji-wenzi">创始人手机</div><div><input class="chuangshi-shouji" type=""/></div></div>
+                        <span class="span-yanzheng"></span>
+                        <div class="bianji-hang1"><div class="bianji-wenzi">创始人邮箱</div><div><input class="chuangshi-email" type=""/></div></div>
+                        <span class="span-yanzheng"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="clear-both"></div>
+
+            <div class="down-height"></div>
+
+        </div>
+
+
+        <div class="clear-both" id="add-project"></div>
+
+
+        <!-- 投资案例及个人经历结束-->
+
+
+
+        <div class="sheight"></div>
+
+
+        <!-- 投资理念开始-->
+        <div class="geren-jingli">
+            投资理念
+            <div class="edit-div" id="edit-div1"><div class="bianji-right">编辑</div><div class="bianji-ico"></div></div>
+            <div class="linian-baocun">保存</div><div class="linian-shanchu">取消</div>
+
+        </div>
+        <div class="add-jingli">作为投资者，您和其他投资者，在投资的道路上最大的不同是什么？</div>
+        <div class="bianji-wenben">
+
+            <form  method="post" onSubmit="return datacheck();">
+                <textarea name="Memo" rows="9"  wrap=PHYSICAL cols="108" onKeyDown="gbcount(this.form.Memo,this.form.total,this.form.used,this.form.remain);" onKeyUp="gbcount(this.form.Memo,this.form.total,this.form.used,this.form.remain);"></textarea>
+                <div class="shuru-wenzi">
+                    <input type="hidden" maxLength="4" name="total" size="3" value="300" class="inputtext">
+                    <input type="hidden" maxLength="4" name="used" size="3" value="0" class="inputtext">
+                    <span>还可以输入</span>
+                    <input  maxLength="4" disabled="true" name="remain" size="3" value="300" class="inputtext">
+                    <span>字</span>
+                </div>
+            </form>
+
+        </div>
+        <div class="clear-both"></div>
+        <div class="touzi-linian">
+            创始人有技术背景·有可供验证的产品或服务·有成长潜力和广阔的市场空间·快速扩张能力·刚性需求创始团队互补·2-3名创始人·有独特资源·对行业深刻理解
+        </div>
+        <div class="tigong-jiazhi">可以提供的附加价值</div>
+        <div class="jiazhi-neirong">规划公司战略 • 制定发展计划 • 完善管理系统 • 组建核心团队 • 协调资源</div>
+        <!-- 投资理念结束-->
+
+        <div class="sheight"></div>
+
+
+        <!-- 教育经历开始-->
+        <div class="geren-jingli">
+            教育经历
+            <div class="edit-div" id="edit-div2"><div class="bianji-right">编辑</div><div class="bianji-ico"></div></div>
+            <div class="jiaoyu-baocun">保存</div>
+
+        </div>
+        <div class="add-jingli">根据您的教育经历认识正在卡贝金融创业或投资的校友</div>
+
+        <div class="clear-both"></div>
+
+
+
+        <div class="tianjia-jiaoyu">
+
+            <div class="xueli-div">
+                <select id="xueli" class="yuanjiao">
+                    <option value="学历">学历</option>
+                    <option value="博士">博士</option>
+                    <option value="硕士">硕士</option>
+                    <option value="本科">本科</option>
+                    <option value="专科">专科</option>
+                </select>
+            </div>
+
+
+            <div class="xuexiao-div">
+                <!--<input class="xuexiao-name" type="text" value="学校名称"/>-->
+                <input type="text" class="xuexiao-name" name="school" id="school-name" value="&nbsp;&nbsp;学校名称" onblur="if(this.value==''){this.value='请选择大学'}" onfocus="if(this.value=='请选择大学'){this.value=''}" onclick="pop()" />
+            </div>
+
+
+            <div class="xueyuan-div">
+                <select id="xueyuan" class="yuanjiao">
+                    <option value="学院">学院</option>
+                    <option value="理学院">理学院</option>
+                    <option value="计算机学院">计算机学院</option>
+                    <option value="经管学院">经管学院</option>
+                    <option value="外语学院">外语学院</option>
+                </select>
+            </div>
+
+
+            <div class="nianfen-div">
+                <select id="nianfen" class="yuanjiao">
+                    <option value="入学年份">入学年份</option>
+                    <option value="1900">1900</option>
+                    <option value="1901">1901</option>
+                    <option value="1902">1902</option>
+                    <option value="1903">1903</option>
+                </select>
+            </div>
+
+
+            <div class="touzi-add yuanjiao" id="tianjia">添加</div>
+            <div class="touzi-add yuanjiao" style="display: none;" title="" id="bianji-baocun">保存</div>
+<input type="hidden" name="baoc">
+        </div>
+
+
+
+        <div id="count">
+
+        <div class="yitianjia">
+            <div class="xueli">本科</div>
+            <div class="daxue">上海交通大学</div>
+            <div class="xueyuan">理学院</div>
+            <div class="nianfen">1900</div>
+            <div class="xueli-bianji" style="display: none;">编辑</div>
+            <div class="xueli-shanchu" style="display: none;">删除</div>
+        </div>
+
+        </div>
+
+        <!-- 教育经历结束-->
+
+
+        <div class="sheight"></div>
+
+
+        <!-- 关注的项目开始-->
+        <div class="geren-jingli">
+            关注的项目
+
+        </div>
+
+        <div class="xiangmu-div">
+
+            <div class="xiangmu-img">
+                <img src="../images/guanzhu_xiangmu.png"/>
+            </div>
+
+            <div class="img-right">
+                <div>车语传媒AutoRadio</div>
+
+
+                <div class="img-wenzi">
+                    天空网是创意发明产品社区与电商相结合的一款产品，利用众包和3D打印让社区用户参
+                与产品开发的整个过程。
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="border-xiangmu"></div>
+
+
+        <div class="xiangmu-div">
+
+            <div class="xiangmu-img">
+                <img src="../images/guanzhu_xiangmu.png"/>
+            </div>
+
+            <div class="img-right">
+                <div>车语传媒AutoRadio</div>
+
+
+                <div class="img-wenzi">
+                    天空网是创意发明产品社区与电商相结合的一款产品，利用众包和3D打印让社区用户参
+                    与产品开发的整个过程。
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="xiangmu-more">
+            <div class="chakan-gengduo"><span>查看更多</span></div>
+
+            <div class="down-bheight"></div>
+
+        </div>
+
+
+
+
+
+        <!-- 关注的项目结束-->
+
+
+
+
+    </div>
+
+    <div class="main-right">
+
+        <div class="right-top">
+            <div class="guanzhu"><span>关注（12）</span></div>
+            <div class="fensi"><span>粉丝（12）</span></div>
+        </div>
+
+        <div class="right-height"></div>
+
+        <div class="guanzhu-div" id="guanzhu">
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="guanzhu-div" id="fensi">
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person1.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+            <div class="right-div">
+                <a href="javascript:void(0)" title="徐佳莹">
+                    <img src="../images/person.jpg"/>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="clear-both"></div>
+
+        <div class="xiashi-gengduo"><span>显示全部</span></div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+<div class="clear-both"></div>
+
+
+<div id="choose-box-wrapper">
+    <div id="choose-box">
+        <div id="choose-box-title">
+            <div style="width:100px;height:30px;float:left;">请选择学校</div><div onclick="hide()" class="xuexiao-close"></div>
+        </div>
+
+        <div class="sosuo-lan">
+            <div class="sosuo-div"><input class="sosuo-input" id="tags" type="text"/></div>
+            <div class="sosuo-btn" id="sosuo-add">添加</div>
+            <div class="jiansuo">输入学校名称或拼音快速检索</div>
+        </div>
+
+
+        <div id="choose-a-province"></div>
+        <div id="choose-a-school"></div>
+
+    </div>
+</div>
+
+
+<!--footer-->
+<div class="footer">
+    <div class="contain footer-main clearfix">
+        <div class="footer-l fl">
+            <p class="footer-lt">
+                <a href="javascript:;" target="_blank" title="关于卡贝金融">关于卡贝金融</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="风险提示">风险提示</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="成功案例">成功案例</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="媒体报道">媒体报道</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="合作伙伴">合作伙伴</a>
+                <i>&middot;</i>
+                <a href="javascript:;" target="_blank" title="联系我们">联系我们</a>
+            </p>
+            <p>Copyright © 2004-2015 卡贝基金 版权所有 | 投资有风险，购买需谨慎</p>
+        </div>
+        <div class="footer-r fl">
+            <p>联系我们（9:00-22:00）</p>
+            <p class="tel">
+                400-666-6666<span>（个人咨询）</span><br/>
+                400-888-8888<span>（企业咨询）</span>
+            </p>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+<!--返回顶部-->
+<div class="back-top">
+    <a href="#top">^</a>
+</div>
+<!--返回顶部 end-->
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/tools/layer/layer.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/jquery.qrcode.min.js"></script>
+<script src="../js/laydate.js"></script>
+<script src="../js/dropdownlist.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/school.js"></script>
+<script src="../js/invest_detail.js"></script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="gb2312">
+    <title>自定义分享内容</title>
+    <link rel="stylesheet" type="text/css" href="../css/comment.css"></head>
+    <style type="text/css">
+    .sina-comment-wrap{width:99%;margin:0 auto;}
+
+    div.sina-comment-list .list .cont .lnk{float:left;display:inline;}
+    div.sina-comment-list .list .item .head{width:90px;text-align:center;}
+    div.sina-comment-list .list .item .cont{margin-left:130px;border-left:1px dashed #ccc;padding-left:20px;}
+    div.sina-comment-list .list .floor .head{display:inline;position:static;float:left;}
+    div.sina-comment-list .list .floor{border-width:0 1px 1px 0;padding-top:0;padding-left:0;border-radius:0 0 5px 0;}
+    div.sina-comment-list .list .floor-wrap{border:1px solid #F3DDB3;border-width:1px 0 0 1px;}
+    </style>
+<body>
+<div class="sina-comment-wrap" id="SI_FormList1"></div>
+<script type="text/javascript" src="http://i.sso.sina.com.cn/js/outlogin_layer.js" charset="utf-8"></script>
+<script charset="utf-8" src="../js/base.js"></script><script charset="utf-8" src="../js/msg.js"></script>
+<script charset="utf-8" src="../js/login.js"></script>
+<script charset="utf-8" src="../js/app.js"></script>
+<script charset="utf-8" src="../js/cmnt.js"></script>
+<script charset="utf-8">
+    ;(function(exports){
+        var $ = exports.___sinacMNT___;
+        /** @private */
+        var adata = ' action-data=';
+        /** @private */
+        var atype = ' action-type=';
+        /** @private */
+        var clz = ' class=';
+        /** @private */
+        var ctype = ' comment-type=';
+        /** @private */
+        var getFillStr = function(str){
+            return '<% this.'+str+' %>';
+        };
+        var shareUrl = 'http://sina.com.cn/?_t='+(new Date()).getTime();
+        // 评论列表右侧分享按钮可以自定义模板，提供数据有 标题，评论用户名及评论内容
+        $.cmnt.tpls.set('cont',['<!-- 头像 start -->',
+                    '<div'+clz+'"head">'+getFillStr('userFace')+'<p'+clz+'"name '+getFillStr('userIco')+'">',
+                         getFillStr('userLnk'),
+                        '</p>',
+                        '<p'+clz+'"area">'+getFillStr('area')+'</p>',
+                        '<span>'+getFillStr('score')+'分</span>',
+                    '</div>',
+                    '<!-- 头像 end -->',
+                    '<!-- 内容 start -->',
+                    '<div'+clz+'"cont"'+ctype+'"itemCont">',
+                        '<div'+clz+'"info">',
+                            getFillStr('time'),
+                        '</div>',
+                        '<div'+clz+'"txt">',
+                            '<!-- 楼层 start -->',
+                            getFillStr('reply'),
+                            '<!-- 楼层 end -->',
+                         getFillStr('cont'),
+                        '</div>',
+                        '<div'+clz+'"action">',
+                            '<span'+clz+'"btns">',
+                                '<a'+clz+'"vote" title="支持"'+atype+'"vote"'+adata+'"newsid='+getFillStr('newsid')+'&mid='+getFillStr('mid')+'" href="javascript:;">',
+                                    '<span>',
+                                        '支持',
+                                        '<em>('+getFillStr('agree')+')</em>',
+                                    '</span>',
+                                '</a>',
+                                '<a'+clz+'"reply"'+atype+'"reply"'+adata+'"maxFloor='+getFillStr('maxFloor')+'&channel='+getFillStr('channel')+'&allNewsid='+getFillStr('allNewsid')+'&newsid='+getFillStr('newsid')+'&mid='+getFillStr('mid')+'&showReply='+getFillStr('showReply')+'&userLnk='+getFillStr('oUserLnk')+'&cont='+getFillStr('oCont')+'" href="javascript:;" hidefocus>回复</a>',
+                                '<a'+clz+'"share"'+atype+'"shareHover"'+adata+'"hasReply='+getFillStr('hasReply')+'&channel='+getFillStr('channel')+'&allNewsid='+getFillStr('allNewsid')+'&newsid='+getFillStr('newsid')+'&mid='+getFillStr('mid')+'&sinaAppkey=445563600&tencentAppkey=111" href="javascript:;">',
+                                    '<em>分享</em>',
+                                '</a>',
+                            '</span>',
+                            getFillStr('newsLnk'),
+                        '</div>',
+                    '</div>',
+                    '<!-- 内容 end -->'].join(''));
+        $.cmnt.tpls.set('floor',['<!-- 内容 start -->',
+                            '<div'+clz+'"head">'+getFillStr('userFace')+'<p'+clz+'"name '+getFillStr('userIco')+'">',
+                                 getFillStr('userLnk'),
+                                '</p>',
+                                '<p'+clz+'"area">'+getFillStr('area')+'</p>',
+                            '</div>',
+                            '<div'+clz+'"cont"'+ctype+'"itemCont">',
+                                '<div'+clz+'"info">',
+                                    getFillStr('time'),
+                                    '<span'+clz+'"num">'+getFillStr('floor')+'</span>',
+                                '</div>',
+                                '<div'+clz+'"txt">'+getFillStr('cont')+'</div>',
+                                '<div'+clz+'"action"><span'+clz+'"btns">',
+                                        '<a'+clz+'"vote" title="支持"'+atype+'"vote"'+adata+'"newsid='+getFillStr('newsid')+'&mid='+getFillStr('mid')+'" href="javascript:;">',
+                                            '<span>',
+                                                '支持',
+                                                '<em>('+getFillStr('agree')+')</em>',
+                                            '</span>',
+                                        '</a>',
+                                        '<a'+clz+'"reply"'+atype+'"reply"'+adata+'"maxFloor='+getFillStr('maxFloor')+'&channel='+getFillStr('channel')+'&allNewsid='+getFillStr('allNewsid')+'&newsid='+getFillStr('newsid')+'&mid='+getFillStr('mid')+'" href="javascript:;" hidefocus>回复</a>',
+                                        '<a'+clz+'"share"'+atype+'"shareHover"'+adata+'"hasReply='+getFillStr('hasReply')+'&channel='+getFillStr('channel')+'&allNewsid='+getFillStr('allNewsid')+'&newsid='+getFillStr('newsid')+'&mid='+getFillStr('mid')+'&sinaAppkey=445563600&tencentAppkey=111" href="javascript:;">',
+                                            '<em>分享</em>',
+                                        '</a>',
+                                    '</span>',
+                                '</div>',
+                            '</div>'].join(''))
+        FormList1 = new $.cmnt.FormList('SI_FormList1',{
+            channel:'ty',
+            newsid:'6-12-342371',
+            parent:'',
+            encoding:'gbk',
+            // 评论框评论同时分享的分享内容由后端实现，只可自定义分享链接shareUrl
+            share_url:shareUrl
+        },{
+            channel: 'ty',
+            newsid: '6-12-342371',
+            //style=1本来为皮肤，应该为group=1
+            group: 1,
+            encoding:'gbk',
+            page: 1,
+            pageSize: 20,
+            maxFloor:20
+        },{});
+
+        // 可以初始化之后修改分享内容
+        FormList1.setFormOpt('share_url','http://weibo.com/');
+
+    })(window);
+</script>
+</body>
+</html>
