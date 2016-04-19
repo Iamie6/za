@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="新浪新闻,年终策划,2015数字新闻生活,新闻中心" />
+	<meta name="description" content="新浪新闻2015年终特别策划-news2015·我的数字新闻生活" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="http://i.sso.sina.com.cn/css/userpanel/v1/top_account.css">
+	<title>新浪新闻2015年终特别策划-news2015·我的数字新闻生活</title>
+	<script type="text/javascript" src="http://i.sso.sina.com.cn/js/user_panel_new_version.js" charset="utf-8"></script>
+	<script type="text/javascript" src="http://n.sinaimg.cn/news/090e8200/20151224/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="http://n.sinaimg.cn/news/090e8200/20151228/highcharts.js"></script>
+	<script type="text/javascript" src="http://n.sinaimg.cn/news/090e8200/20151228/raphael.js"></script>
+	<script type="text/javascript" src="http://n.sinaimg.cn/news/9f047926/20151228/allMessage.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<style type="text/css">
+	.real-time-window{display:none!important;}
+	</style>
+</head>
+<body>
+	<!-- 展示数据前 -->
+	<div class="begin">
+		<div class="part1">
+			<img src="http://n.sinaimg.cn/news/090e8200/20151225/desktop_03.png">
+			<div class="startBtn">
+				<img src="http://n.sinaimg.cn/news/090e8200/20151225/deskTopBtn_03.png">
+				<span class="bigCircle tipClick"></span>
+				<span class="smallCircle tipClick2"></span>
+				<div>
+					<img class="tipClick3" src="http://n.sinaimg.cn/news/090e8200/20151229/xiaoshou_03.png">
+					<span>点击开始</span>
+				</div>
+			</div>
+		</div>
+		<div class="news tobig">
+			<div class="Mininav">
+				<div class="top-nav clearfix">
+			        <div class="tn-left clearfix">
+			            <a class="logo" target="_blank" href="http://news.sina.com.cn/"></a>
+			            <span class="title" target="_blank" href="http://news.sina.com.cn/c/z/2015qglh/">年终特别策划——news2015· 我的数字新闻生活</span>
+			        </div>
+			        <div class="tn-right">
+						<div class="sina-top-bar-user " top-node-type="user" top-data="auto" id="SI_User">
+				            <div class="ac-rgst">
+				            </div>
+				            <div class="ac-login">
+				            </div>
+					    </div>
+
+			            <div class="bshare-custom icon-medium">
+			                <div class="bsPromo bsPromo2"></div>
+			                <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+			            </div>
+			            <a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=1-326-3265" class="cmnt" target="_blank"></a>
+			        </div>
+			    </div>
+			</div>
+			<div class="bkground">
+				<img class="titlePic" src="http://n.sinaimg.cn/news/090e8200/20151225/tilte_03.png">
+			</div>
+			<div class="glass">
+				<div>
+					<img src="http://n.sinaimg.cn/news/090e8200/20151225/glass1_03.jpg">
+					<ul>
+						<li style="width:352px;">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_03.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_09.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_12.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_15.jpg">
+						</li>
+						<li style="width:374px;">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_05.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_10.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_13.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_16.jpg">
+						</li>
+						<li style="width:274px;">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_06.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_08.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_11.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_14.jpg">
+							<img class="animate" src="http://n.sinaimg.cn/news/090e8200/20151225/glass_17.jpg">	
+						</li>
+					</ul>
+					<img src="http://n.sinaimg.cn/news/090e8200/20151225/glass_18.jpg">
+					<img src="http://n.sinaimg.cn/news/090e8200/20151225/glass_19.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 展示数据 -->
+	<div class="showData">
+		<div class="goToLogin">
+			<div class="resolution">
+				<div>
+					<p class="resolutionWelcome">HI&nbsp;,<span class="showDataName"></span></p>
+					<img src="http://n.sinaimg.cn/news/090e8200/20151225/tip1_03.png">
+					<p class="portrait"></p>
+					<div class="getMes">
+						<ul>
+							<li>正在解析您的数字新闻属性</li>
+							<li>正在读取用户名...</li>
+							<li>性别...地域...</li>
+							<li>正在读取兴趣属性...</li>
+							<li>浏览记录...</li>
+							<li>评论记录...</li>
+							<li>解析完成！</li>                            
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="btnbox">
+				<div>
+					<img src="http://n.sinaimg.cn/news/090e8200/20151225/btnBoxHead_03.png">
+					<div>
+						<a class="logBtn" href="javascript:;"></a>
+						<a class="sigBtn" href="https://login.sina.com.cn/signup/signup?entry=news" target="_blank"></a>
+					</div>
+					<img class="noLogin" src="http://n.sinaimg.cn/news/090e8200/20151225/noLoginBtn1_13.png">
+				</div>
+			</div>
+			<div class="input">
+				<div>
+					<div class="inputBox">
+						<p class="tilte1 inputbkground"></p>
+						<p class="sex1">
+							<span class="sex2 inputbkground"></span>
+							<span class="sex3 inputbkground"></span>
+							<span class="sex4 inputbkground"></span>
+						</p>
+						<p class="age1">
+							<span class="age2 inputbkground"></span>
+							<input class="age3 inputbkground" type="text">
+						</p>
+						<p class="add1">
+							<span class="add2 inputbkground"></span>
+							<select class="add3 inputbkground">
+								<option>北京</option>
+								<option>广东</option>
+								<option>江苏</option>
+								<option>浙江</option>
+								<option>山东</option>
+								<option>海外</option>
+								<option>天津</option>
+								<option>湖南</option>
+								<option>河南</option>
+								<option>河北</option>
+								<option>湖北</option>
+								<option>上海</option>
+								<option>福建</option>
+								<option>四川</option>
+								<option>辽宁</option>
+								<option>安徽</option>
+								<option>陕西</option>
+								<option>广西</option>
+								<option>山西</option>
+								<option>江西</option>
+								<option>吉林</option>
+								<option>黑龙江</option>
+								<option>重庆</option>
+								<option>云南</option>
+								<option>内蒙古</option>
+								<option>贵州</option>
+								<option>甘肃</option>
+								<option>新疆</option>
+								<option>海南</option>
+								<option>宁夏</option>
+								<option>台湾</option>
+								<option>香港</option>
+								<option>青海</option>
+								<option>西藏</option>
+								<option>澳门</option>
+							</select>
+						</p>
+						<p class="mylist1">
+							<span class="mylist2 inputbkground"></span>
+							<span class="mylist3 inputbkground"></span>
+						</p>
+						<div class="listbox1">
+							<ul>
+								<li class="listbox2 inputbkground">
+									<span data-inner="郭伯雄" style="width:90px;top:0:left:0;"></span>
+									<span data-inner="河北肃宁" style="width:88px;top:0;left:106px;"></span>
+									<span data-inner="公务员工资" style="width:128px;top:0;left:210px;"></span>
+									<span data-inner="徐才厚" style="width:90px; top:50px; left:4px;"></span>
+									<span data-inner="周永康" style="width:90px; top:50px; left:114px;"></span>
+									<span data-inner="天津爆炸" style="width:128px; top:50px; left:215px;"></span>
+									<span data-inner="深圳机场撞人事件" style="width:170px;top:100px;left:2px;"></span>
+									<span data-inner="抗战胜利70周年" style="width:160px;top:100px;left:180px;"></span>
+								</li>
+								<li class="listbox3 inputbkground">
+									<span data-inner="人均收入" style="width:90px;top:0;left:0;"></span>
+									<span data-inner="IS" style="width:90px;top:0;left:108px;"></span>
+									<span data-inner="中国人质" style="width:128px;top:0;left:210px;"></span>
+									<span data-inner="空气质量" style="width:90px;top:50px;left:4px;"></span>
+									<span data-inner="严重违纪" style="width:90px;top:50px;left:114px;"></span>
+									<span data-inner="习近平" style="width:128px;top:50px;left:216px;"></span>
+									<span data-inner="养老保险" style="width:170px;top:100px;left:2px;"></span>
+									<span data-inner="李克强" style="width:100px;top:100px;left:184px;"></span>
+								</li>
+							</ul>
+						</div>
+						<p class="inputOkBtn inputbkground"></p>
+					</div>
+					<div class="inputBtnBox clearfix">
+						<a class="backLoginBtn" href="javascript:;"></a>
+						<a class="nextLoginBtn" href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+			<div class="loginOff">
+				<div>
+					<img src="http://n.sinaimg.cn/news/090e8200/20151225/bk4_03.png">
+					<a class="back" href="javascript:;"></a>
+					<a class="noTo" href="javascript:;"></a>
+				</div>
+			</div>
+		</div>
+		<div class="modelShow">
+			<div class="personalInfor">
+				<div class="personal clearfix">
+					<div class="touxingBox">
+						<p class="touxing"></p>
+						<p class="inputAgin">
+						<span>补全信息</span>或 <span>登录</span> &nbsp;&nbsp;查看我的数字新闻生活</p>
+						<div class="inputAginBox">
+							<p class="inputSex">
+								<span class="inputSex1">性别</span>
+								<span class="inputSex2 active">男</span>
+								<span class="inputSex3">女</span>
+							</p>
+							<p class="inputAge">
+								<span class="inputAge1">年龄</span>
+								<input type="text" class="inputAge2">
+							</p>
+							<p class="inputAdd">
+								<span>地域</span>
+								<select>
+									<option>北京</option>
+									<option>广东</option>
+									<option>江苏</option>
+									<option>浙江</option>
+									<option>山东</option>
+									<option>海外</option>
+									<option>天津</option>
+									<option>湖南</option>
+									<option>河南</option>
+									<option>河北</option>
+									<option>湖北</option>
+									<option>上海</option>
+									<option>福建</option>
+									<option>四川</option>
+									<option>辽宁</option>
+									<option>安徽</option>
+									<option>陕西</option>
+									<option>广西</option>
+									<option>山西</option>
+									<option>江西</option>
+									<option>吉林</option>
+									<option>黑龙江</option>
+									<option>重庆</option>
+									<option>云南</option>
+									<option>内蒙古</option>
+									<option>贵州</option>
+									<option>甘肃</option>
+									<option>新疆</option>
+									<option>海南</option>
+									<option>宁夏</option>
+									<option>台湾</option>
+									<option>香港</option>
+									<option>青海</option>
+									<option>西藏</option>
+									<option>澳门</option>
+								</select>
+							</p>
+							<div>确定</div>
+						</div>
+					</div>
+					<div class="info">
+						<p></p>
+						<div class="clearfix">
+							<p>
+								<span>未知</span>
+								<span>性别</span>
+							</p>
+							<p>
+								<span>未知</span>
+								<span>年龄</span>
+							</p>
+							<p style="border:none;">
+								<span>未知</span>
+								<span>地区</span>
+							</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="interest">
+					<p><span class="interestIcon"></span><span>我的兴趣</span></p>
+					<div class="label clearfix">
+						<span>雾霾</span>
+					</div>
+					<span>手动添加</span>
+					<div class="inputLabel">
+						<input type="text">
+						<span></span>
+					</div>
+				</div>
+				<div class="record Nactive">
+					<p><span class="recordIcon"></span><span>我的记录</span></p>
+					<span>最新看过</span>
+					<span>我的评论(<i>0</i>)</span>
+				</div>
+				<div class="closeBtn">
+				</div>
+			</div>
+			<div class="content">
+				<div class="hardBox">
+					<div>
+						<div class="hardBoxPic">
+							<p class="hardTip">拖动两个兴趣圈上的小圆，看看你和相同属性的向伙伴们都爱看那些新闻↓</p>
+							<div class="hardCircle1">
+								<p class="attr1">雾霾</p>
+								<div id="circleBox1">
+									
+								</div>
+								<img class="hardtip2" src="http://n.sinaimg.cn/news/090e8200/20151228/hardtip2_03.png">
+							</div>
+							<div class="hardCircle2">
+								<p class="attr2">雾霾</p>
+								<div id="circleBox2">
+									<p><span id="circleBox2Att">北京</span><span>用户的兴趣</span></p>
+								</div>
+							</div>
+							<p class="hardBtn">切换下一属性:性别</p>
+						</div>
+						<div class="guess">
+							<p class="clearfix"><span style="float:left;"></span>你们都爱看<span style="float: right;"></span></p>
+							<div>
+								<a style="opacity:0;" href="http://tags.news.sina.com.cn/雾霾"  target="_blank">雾霾</a>
+							</div>
+						</div>
+						<div class="otherLike">
+							<p><span id="otherLikeTitle">北京</span>小伙伴2015年最喜欢看的新闻</p>
+							<ul class="clearfix">
+								<li><a href="javascript:;" target="_blank"><span></span>郑州部分加油站车满为患 警方称限油传言不实</a></li>
+								<li><a href="javascript:;" target="_blank"><span></span>中央部委今年民生任务落实调查:保障房超额完成</a></li>
+								<li><a href="javascript:;" target="_blank"><span></span>分析称北上广深房价依然看涨</a></li>
+								<li><a href="javascript:;" target="_blank"><span></span>山东滕州事业考高分生井喷 半年后仅3人进面试</a></li>
+							</ul>
+						</div>
+					</div>
+					<img class="tipdown" src="http://n.sinaimg.cn/news/090e8200/20151229/tipdown.png">
+				</div>
+				<div class="mycomment">
+					<div>
+						<h3 class="clearfix"><span class="year">2015年</span><span class="mycommentTilte">新浪新闻最热新闻、热评新闻榜</span></h3>
+						<div class="mycommentBox clearfix">
+							<div class="newsCom">
+								<p>您最近看过这些新闻：</p>
+								<ul>
+									<li><a href="javascript:;" target="_blank"><span></span> 中信证券：前期被调查员工已有部分返岗工已有部分返岗</a></li>
+									<li><a href="javascript:;" target="_blank"><span></span>工已有部分返岗中信证券：前期被调查期被调查期被调查期被调查期被调查期被调查期被调查员工已有部分返岗</a></li>
+									<li><a href="javascript:;" target="_blank"><span></span>中信证券：前期被调查员工已有部分返岗</a></li>
+									<li><a href="javascript:;" target="_blank"><span></span>中信调查员工已有部分返岗</a></li>
+									<li><a href="javascript:;" target="_blank"><span></span>中信证券：前期被调查员工已有部分返岗</a></li>
+								</ul>
+								<div class="newsComBtn" id="lookList1">
+									<p>看2015年最热新闻</p>
+								</div>
+								<div class="commentList">
+									<p>2015年热评新闻TOP5</p>
+									<ul>
+										<li><a href="http://news.sina.com.cn/c/2015-06-10/103231934391.shtml" target="_blank" class="clearfix"><span class="num">1</span><span class="newsTitle">河北肃宁公安局牺牲政委妻子跳楼身亡</span><span class="sum">32.1万</span></a></li>
+										<li><a href="http://news.sina.com.cn/c/2015-06-11/180031940409.shtml" target="_blank" class="clearfix"><span class="num">2</span><span class="newsTitle">周永康一审被判处无期徒刑</span><span class="sum">29.7万</span></a></li>
+										<li><a href="http://news.sina.com.cn/c/2015-02-16/193431528420.shtml" target="_blank" class="clearfix"><span class="num">3</span><span class="newsTitle">中央领导同志看望老同志</span><span class="sum">19.3万</span></a></li>
+										<li><a href="http://news.sina.com.cn/c/2015-08-31/105632259899.shtml" target="_blank" class="clearfix"><span class="num">4</span><span class="newsTitle">中央党校人士解读全面推进依法治国</span><span class="sum">18.8万</span></a></li>
+										<li><a href="http://news.sina.com.cn/c/2015-08-27/070932240805.shtml" target="_blank" class="clearfix"><span class="num">5</span><span class="newsTitle">天津爆炸事故11名责任人被控制 12人被刑拘</span><span class="sum">18.4万</span></a></li>
+									</ul>
+									<div>
+										<p id="closeList1" style="display:none">关闭榜单</p>
+										<p id="closeList11">查看热评新闻TOP20</p>
+									</div>
+								</div>
+							</div>
+							<div class="newsList">
+								<div class="newsListNum">
+									<p class="newsListNumP"><span>5000</span>条</p>
+									<p class="newsListNumWorld">你今年发送的评论数</p>
+									<i></i>
+								</div>
+								<p>您最近评论过的新闻：</p>
+								<ul>
+									<li><a href="javascript:;" target="_blank"><span></span>中信证券：前期被调查员工已有部分返岗工已有部分返岗</a></li>
+									<li><a href="javascript:;" target="_blank"><span></span>工已有部分返岗中信证券：前期被调查期被调查期被调查期被调查期被调查期被调查期被调查员工已有部分返岗</a></li>
+								</ul>
+								<div class="newsComBtn" id="lookList2">
+									<p>看2015年热评新闻</p>
+								</div>
+								<div class="newsListcover">
+									<i></i>
+									<p>2015年最热新闻TOP5</p>
+									<ul>
+										<li><a href="http://news.sina.com.cn/c/2015-05-13/100031826581.shtml" target="_blank"><span>1</span>9月3日抗战胜利70年纪念日全国放假1天</a></li>
+										<li><a href="http://news.sina.com.cn/c/2015-04-03/090131678495.shtml" target="_blank"><span>2</span>天津检察机关对周永康提起公诉</a></li>
+										<li><a href="http://news.sina.com.cn/c/sd/2015-01-28/025931451014.shtml" target="_blank"><span>3</span>专家:军中腐败与军队经商有很大关系</a></li>
+										<li><a href="http://news.sina.com.cn/c/nd/2015-08-14/doc-ifxfxraw8791754.shtml" target="_blank"><span>4</span>天津爆炸事故涉事企业高管名单曝光</a></li>
+										<li><a href="http://news.sina.com.cn/c/2015-03-16/000231609544.shtml" target="_blank"><span>5</span>徐才厚癌症恶化医治无效死亡</a></li>
+									</ul>
+									<div>
+										<p id="closeList2" style="display:none;">关闭榜单</p>
+										<p id="closeList22">查看最热新闻TOP20</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<img class="tipdown" src="http://n.sinaimg.cn/news/090e8200/20151229/tipdown.png">
+				</div>
+				<div class="sinaData">
+					<div>
+						<p class="allNews">这一年新浪新闻累计<span>生产<strong>0</strong></span>篇新闻内容</p>
+						<p class="allCom">累计<span>被评论<strong>0</strong></span>条</p>
+						<p class="allShare">这些内容累计<span>被分享<strong>0</strong>次</span></p>
+						<p class="allTime">累计<span>被阅读<strong>0</strong></span>分钟</p>
+					</div>
+					<img class="tipdown" src="http://n.sinaimg.cn/news/090e8200/20151229/tipdown.png">
+				</div>
+				<div class="chartPage">
+					<div>
+						<p>这一年累计有<span><strong>0</strong>人</span>在新浪新闻浏览内容,这些用户中:</p>
+						<div class="clearfix">
+							<div class="chart1Box">
+								<p><span class="circle1"></span><span class="line1">20~29岁年龄段为主力用户</span></p>
+								<div id="chart1"></div>
+							</div>
+							<div class="chart2Box">
+								<p><span class="circle1"></span><span class="line1">男性比女性更喜欢看新闻</span></p>
+								<div id="chart2"></div>
+							</div>
+							<div class="chart3Box">
+								<p><span class="circle1"></span><span class="line1" style="width:164px">浏览量居前三位的是：广东、北京、江苏的用户</span></p>
+								<div id="chart3"></div>
+							</div>
+							<div class="chart4Box">
+								<p><span class="circle1"></span><span class="line1">相对于浏览，山东和天津的用户更喜欢评论</span></p>
+								<div id="chart4"></div>
+							</div>
+						</div>
+					</div>
+					<img class="tipdown" src="http://n.sinaimg.cn/news/090e8200/20151229/tipdown.png">
+				</div>
+				<div class="footer">
+					<div class="footerBox">
+						<img class="lightSpeedIn ani" src="http://n.sinaimg.cn/news/090e8200/20151228/footerTitle_03.png">
+						<a href="http://news.sina.com.cn" target="_blank" class="btnShow ani">
+							<p>开启我的新浪新闻之旅</p>
+						</a>
+						<div class="footerBtnBox clearfix fadeInUp1 ani">
+							<img src="http://n.sinaimg.cn/news/090e8200/20151228/2015mylive_03.jpg">
+							<a href="javascript:;"  class="footerstartAginBtn">重新观看</a>
+							<a target="_blank" href="http://service.weibo.com/share/share.php?vt=1&url=...&isdoc=1&searchPic=false&title=...&pic=..." class="footershareBtn">分享</a>
+						</div>
+						<div class="clearfix footerAll fadeInUp2 ani">
+							<p>产品<span>:</span>唐碧虹</p>
+							<p>设计<span>:</span>王岑</p>
+							<p>前端<span>:</span>孟德华</p>
+							<p>数据支持<span>:</span>新媒体技术中心、新浪网数据中心</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="allListBox1">
+		<div>
+			<span>关闭</span>
+			<div>
+				<ul>
+					<li><a href="http://news.sina.com.cn/c/2015-06-10/103231934391.shtml" target="_blank"><span>1</span>河北肃宁公安局牺牲政委妻子跳楼身亡</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-06-11/180031940409.shtml" target="_blank"><span>2</span>周永康一审被判处无期徒刑</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-02-16/193431528420.shtml" target="_blank"><span>3</span>中央领导同志看望老同志</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-08-31/105632259899.shtml" target="_blank"><span>4</span>中央党校人士解读全面推进依法治国</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-08-27/070932240805.shtml" target="_blank"><span>5</span>天津爆炸事故11名责任人被控制 12人被刑拘</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-07-30/220132161611.shtml" target="_blank"><span>6</span>国安部副部长马建被曝有6名情妇2名私生子</a></li>
+					<li><a href="http://news.sina.com.cn/c/nd/2015-11-27/doc-ifxmazmy2135683.shtml" target="_blank"><span>7</span>新华社调查桑兰摔伤真相：她说了17年的谎</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-01-21/005931423225.shtml" target="_blank"><span>8</span>在押犯网聊发展7名情人 逼民警之妻探视献身</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-08-24/162632233614.shtml" target="_blank"><span>9</span>我国拟于抗战胜利70周年之际特赦四类服刑罪犯</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-08-18/152032218427.shtml" target="_blank"><span>10</span>国家安监总局局长杨栋梁接受组织调查(图/简历)</a></li>
+					<li><a href="http://news.sina.com.cn/o/2015-10-09/doc-ifxirmqz9618462.shtml" target="_blank"><span>11</span>联合国拟大幅增加中国会费 中方反对</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-06-09/113231930028.shtml" target="_blank"><span>12</span>河北肃宁发生特大枪击案4死5伤 公安局政委牺牲</a></li>
+					<li><a href="http://news.sina.com.cn/s/p/2015-05-11/104231817337.shtml" target="_blank"><span>13</span>成都被暴打女司机发道歉信:开斗气车愿受罚</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-01-19/111731416668.shtml" target="_blank"><span>14</span>人社部：公务员工资调整方案文件已发到各单位</a></li>
+					<li><a href="http://news.sina.com.cn/c/nd/2015-09-01/doc-ifxhkafe6250838.shtml" target="_blank"><span>15</span>张高丽29次批示天津爆炸事故：彻查涉案者背景</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-03-05/073731570105.shtml" target="_blank"><span>16</span>崔永元遇王岐山：我没啥事但见您却还紧张</a></li>
+					<li><a href="http://news.sina.com.cn/c/nd/2015-09-07/doc-ifxhqtsx3569788.shtml" target="_blank"><span>17</span>今年中秋节放假安排发布 官方解读为何只放2天</a></li>
+					<li><a href="http://news.sina.com.cn/s/p/2015-04-07/235931690252.shtml" target="_blank"><span>18</span>高校男生全裸对女生宿舍方向“打飞机”(图)</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-05-06/191931801189.shtml" target="_blank"><span>19</span>李克强：要民众证明“你妈是你妈”是天大笑话</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-04-09/055931696085.shtml" target="_blank"><span>20</span>中央就构建和谐劳动关系发文:保障休息休假权利</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="allListBox2">
+		<div>
+			<span>关闭</span>
+			<div>
+				<ul>
+					<li><a href="http://news.sina.com.cn/c/2015-05-13/100031826581.shtml" target="_blank"><span>1</span>9月3日抗战胜利70年纪念日全国放假1天</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-04-03/090131678495.shtml " target="_blank"><span>2</span>天津检察机关对周永康提起公诉</a></li>
+					<li><a href="http://news.sina.com.cn/c/sd/2015-01-28/025931451014.shtml" target="_blank"><span>3</span>专家:军中腐败与军队经商有很大关系</a></li>
+					<li><a href="http://news.sina.com.cn/c/nd/2015-08-14/doc-ifxfxraw8791754.shtml" target="_blank"><span>4</span>天津爆炸事故涉事企业高管名单曝光</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-03-16/000231609544.shtml" target="_blank"><span>5</span>徐才厚癌症恶化医治无效死亡</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-07-30/220132161611.shtml" target="_blank"><span>6</span>国安部副部长马建被曝有6名情妇2名私生子</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-01-09/011931377605.shtml" target="_blank"><span>7</span>刘汉妻子杨雪涉包庇犯罪仍未受审 疑涉周永康案</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-06-10/103231934391.shtml" target="_blank"><span>8</span>河北肃宁公安局牺牲政委妻子跳楼身亡</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-02-27/092331548012.shtml" target="_blank"><span>9</span>31省份城镇居民人均收入排行公布(表)</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-08-13/064632198536.shtml" target="_blank"><span>10</span>天津滨海新区爆炸已知核心事实(实时更新)</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-06-15/072431951165.shtml" target="_blank"><span>11</span>中国气象局取消“雷评”等事项 曾遭总理痛批</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-11-19/doc-ifxkszhk0386278.shtml" target="_blank"><span>12</span>习近平就中国公民被IS杀害发表讲话</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-08-18/152032218427.shtml" target="_blank"><span>13</span>国家安监总局局长杨栋梁接受组织调查(图/简历)</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-02-02/095131470948.shtml" target="_blank"><span>14</span>中信证券：前期被调查员工已有部分返岗工已有部分返岗</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-03-24/111931639010.shtml" target="_blank"><span>15</span>南京副区长王德宝在女儿婚礼现场被带走</a></li>
+					<li><a href="http://news.sina.com.cn/c/sz/2015-08-27/doc-ifxhkpcu4792301.shtml" target="_blank"><span>16</span>习近平《做焦裕禄式的县委书记》一书解读</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-03-03/004731559206.shtml" target="_blank"><span>17</span>党报公众号:郭正钢被查释放的信号你懂得</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-05-03/145631788108.shtml" target="_blank"><span>18</span>这个五一假期你可能错过11条大新闻</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-08-15/203232208695.shtml" target="_blank"><span>19</span>习近平指示坚决遏制重特大安全生产事故发生</a></li>
+					<li><a href="http://news.sina.com.cn/c/2015-03-02/011931555576.shtml" target="_blank"><span>20</span>深圳机场车祸已致9死22伤 肇事女司机丧命</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://static.bshare.cn/b/buttonLite.js#style=-1&uuid=cc6dc2b3-f467-40cb-afae-c7c6154a5f54&pophcol=2&lang=zh"></script>
+    <script type="text/javascript" src="http://static.bshare.cn/b/bshareC0.js"></script>
+    <script type="text/javascript">
+    	bShare.addEntry({
+            title: '新浪新闻2015年终特别策划--news2015·我的数字新闻生活',
+            summary: '',
+            pic:'http://n.sinaimg.cn/news/9f047926/20151230/peitu.jpg',
+            url:'http://news.sina.com.cn/2015newslife.html'
+        })
+    </script>
+</body>
+</html>

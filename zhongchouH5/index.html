@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="format-d-etection" content="telephone=no" />
+	<meta name="MobileOptimized" content="320">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<title>初始化</title>
+	<link rel="stylesheet" href="style/index.css">
+	<script src="js/sinabone.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<style>
+		.real-time-window{display:none !important;}
+	</style>
+</head>
+<body>
+	<!-- <img src=""> -->
+	<audio class="music" src="http://n.sinaimg.cn/9f047926/20150813/BGM.mp3" loop></audio>
+	<audio id="zidanAudio" src="http://n.sinaimg.cn/9f047926/20150813/3881.mp3"></audio>
+	<img class="yingyue run hide" src="images/yingyue_03.png"/>
+	<div class="loading">
+		<img class="loadbk" src="images/loadbk_02.jpg">
+		<p class="loadingbox"><span class="loadingline"></span></p>
+		<p>Loading...<span class="scale">0</span>%</p>
+		<p>建议在WIFI下观看</p>
+	</div>
+	<div class="section hide" id="sec1">
+		<img class="opaci delay4" src="images/logo_03.png"/>
+		<img class="fadeInLeftOpaci delay3" src="images/title_07.png"/>
+		<img class="opaci delay4" src="images/page1person_03.png"/>
+		<p class="firstP opaci delay1">新浪新闻&nbsp;&nbsp;&nbsp;新浪历史&nbsp;&nbsp;&nbsp;关爱抗战老兵公益基金联合发起</p>
+		<img class="startBtn" src="images/startBtn_03.png"/>
+		<div class="animationBox hide"></div>
+		<img class="qiao hide opaci delay1" src="images/qiao_02.png"/>
+		<img class="zidan hide fadeInOut" src="images/zidan_03.jpg"/>
+		<img class="qiaoword hide opaci delay2" src="images/zidanword_03.png">
+		<div class="huandengBox hide">
+			<img class="fadeInLeft delay3" src="images/huandengji_02.jpg"/>
+			<div class="dengguang towidth delay1"></div>
+			<div class="huandengpic"></div>
+		</div>
+		<img class="picworld opaci hide" src="images/page2w1_02.png" />
+		<img class="picworld opaci hide" src="images/page2w2_02.png" />
+		<img class="picworld opaci hide" src="images/page2w3_02.png" />
+		<img class="picworld opaci hide" src="images/page2w4_02.png" />
+		<img class="picworld opaci hide" src="images/page2w5_02.png" />
+		<img class="picworld opaci hide" src="images/page2w6_02.png" />
+		<p></p>
+		<img class="tipbtn hide tipAnim" src="images/tipbtn_03.png">
+		<img class="hide per" src="images/huandengpic1_03.png">
+		<img class="hide per" src="images/huandengpic2_03.png">
+		<img class="hide per" src="images/huandengpic3_03.png">
+		<img class="hide per" src="images/huandengpic4_03.png">
+		<img class="hide per" src="images/huandengpic5_03.png">
+		<img class="hide per" src="images/huandengpic6_03.png">
+	</div>
+	<div class="article hide">
+		<!-- <div class="sec">
+			<img src="images/old1.jpg">
+			<img class="pagew1 fadeInLeftOpaci" src="images/pagew1_03.png">
+			<p class="answer opaci delay3">邱桂生,1924年生，53军116师346团输送连，现居湖南宁远县舜陵镇邱家村，曾在高黎贡山输送粮食和弹药。</p>
+			<img class="tipbtn tipAnim" src="images/tipbtn_03.png">
+		</div>
+		<div class="sec">
+			<img src="images/old2.jpg">
+			<img class="pagew1 fadeInLeftOpaci" src="images/page5w2_03.png">
+			<p class="answer opaci delay3">黎逢次,1925年生，道县地方保安团8连6排2班，现居湖南宁远县天平镇，打完吊针的第二天便拎着筐下了菜地。</p>
+			<img class="tipbtn tipAnim" src="images/tipbtn_03.png">
+		</div>
+		<div class="sec">
+			<img src="images/old3.jpg">
+			<img class="pagew3 fadeInLeftOpaci" src="images/page5w3_03.png">
+			<p class="answer opaci delay3">汤天保，1921年生，新6军14师迫击炮连，独居宁远县保安乡新岭脚村，“职业病”落下终生耳疾。</p>
+			<img class="tipbtn tipAnim" src="images/tipbtn_03.png">
+		</div>
+		<div class="sec">
+			<img src="images/old4.jpg">
+			<img class="pagew4 fadeInLeftOpaci" src="images/page5w4_03.png">
+			<p class="answer opaci delay3">袁养美，1927年生，税警二总团特务营第一连，现居湖南省永州市宁远县清水桥镇，独自照顾失明老伴。</p>
+			<img class="tipbtn tipAnim" src="images/tipbtn_03.png">
+		</div> -->
+		<div class="sec">
+			<img src="images/bk1.jpg"/>
+			<p class="content opaci delay4">
+				<span>致敬老兵，</span>
+				<span>是一场对抗遗忘的抗战，</span>
+				<span>一次与时间赛跑的偿还。</span>
+				<span>今天，我们共筑一座属于</span>
+				<span>中国网民自己的——</span>
+				<span>抗战胜利70周年纪念碑。</span>
+				<span>每一块砖，</span>
+				<span>都向老兵致敬，</span>
+				<span>每一元钱，</span>
+				<span>都汇聚成爱心洪流，</span>
+				<span>温暖老兵，抚平伤痕。</span>
+			</p>
+			<p class="tipword opaci delay3">
+				<span>向上滑动</span>
+				<span>为纪念碑添砖</span>
+			</p>
+			<img class="tipbtn tipAnim" src="images/tipbtn_03.png">
+		</div>
+		<div class="sec">
+			<img src="images/bk1.jpg">
+			<img class="Mon opaci delay4" src="images/Mon_02.jpg">
+			<p class="joinWord">已有<span class="joinNum"></span>位网友为纪念碑添砖加瓦</p>
+			<p class="towerscale">网络纪念碑完成度<span></span></p>
+			<div class="towerN opaci delay4">
+				<div class="towerY"></div>
+			</div>
+			<p class="zhuanBtn opaci  delay3">我要添砖</p>
+			<a href="javascript:;" target="_blank" class="juanBtn opaci delay3">为老兵捐款</a>
+			<img class="tipbtn tipAnim" src="images/tipbtn_03.png">
+		</div>
+		<div class="sec">
+			<img src="images/bk1.jpg">
+			<img class="logo opaci delay4" src="images/logo_03.png">			
+			<img class="diTitle fadeInLeftOpaci delay3" src="images/diTitle_09.png">
+			<div class="fengdiBtnBox">
+				<p class="opaci delay1">众筹所得款项，将全部用于抗战老兵助养行动资金的发放，并由关爱抗战老兵公益基金定期在微公益页面上公布去向明细。</p>
+				<p class="sharebtn fadeInDown delay1">分享</p>
+				<a href="javascript:;" class="aginbtn fadeInDown delay5">重新阅读</a>
+			</div>
+		</div>
+	</div>
+	<div class="share justTobig hide">
+		<img src="images/share_bg.png">
+		<a href="http://service.weibo.com/share/share.php?vt=1&url=.....&isdoc=1&searchPic=false&title=......&pic=...."><img src="images/share_logo.png"></a>
+		<img src="images/share_text.png">
+	</div>
+	<div class="mark hide">
+		<div class="markWord">
+			<p>你是第<span class="joinNum"></span>位</p>
+			<p>为纪念碑添砖加瓦的网友</p>
+			<p>点击任意区域，去给老兵捐款吧！</p>
+		</div>
+	</div>
+</body>
+</html>
